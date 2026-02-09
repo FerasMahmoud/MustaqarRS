@@ -243,11 +243,11 @@ export function Features() {
                 </div>
 
                 {/* Feature pills */}
-                <div className={`grid grid-cols-2 sm:grid-cols-3 gap-3 sm:gap-4 mt-auto ${isRtl ? 'direction-rtl' : ''}`}>
+                <div className={`grid grid-cols-3 gap-2 sm:gap-4 mt-auto ${isRtl ? 'direction-rtl' : ''}`}>
                   {[
                     {
                       icon: (
-                        <svg className="w-6 h-6 sm:w-8 sm:h-8 fill-none stroke-current text-white" viewBox="0 0 24 24">
+                        <svg className="w-5 h-5 sm:w-8 sm:h-8 fill-none stroke-current text-white" viewBox="0 0 24 24">
                           <rect x="3" y="4" width="18" height="18" rx="2" ry="2" strokeWidth="2"/>
                           <path d="M16 2v4M8 2v4M3 10h18" strokeWidth="2"/>
                         </svg>
@@ -257,7 +257,7 @@ export function Features() {
                     },
                     {
                       icon: (
-                        <svg className="w-6 h-6 sm:w-8 sm:h-8 fill-none stroke-current text-white" viewBox="0 0 24 24">
+                        <svg className="w-5 h-5 sm:w-8 sm:h-8 fill-none stroke-current text-white" viewBox="0 0 24 24">
                           <rect x="1" y="4" width="22" height="16" rx="2" ry="2" strokeWidth="2"/>
                           <path d="M1 10h22" strokeWidth="2"/>
                         </svg>
@@ -267,7 +267,7 @@ export function Features() {
                     },
                     {
                       icon: (
-                        <svg className="w-6 h-6 sm:w-8 sm:h-8 fill-none stroke-current text-white" viewBox="0 0 24 24">
+                        <svg className="w-5 h-5 sm:w-8 sm:h-8 fill-none stroke-current text-white" viewBox="0 0 24 24">
                           <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                         </svg>
                       ),
@@ -275,10 +275,10 @@ export function Features() {
                       desc: isRtl ? 'إلغاء سهل' : 'Easy cancellation'
                     },
                   ].map((item, i) => (
-                    <div key={i} className={`p-3 sm:p-5 rounded-xl sm:rounded-2xl bg-white/25 backdrop-blur-sm border-2 border-white/50 hover:bg-white/35 hover:border-white/70 transition-all shadow-lg ${i === 2 ? 'col-span-2 sm:col-span-1 max-w-[200px] mx-auto sm:max-w-none' : ''}`}>
-                      <div className="mb-2 sm:mb-3 block">{item.icon}</div>
-                      <h4 className="text-white font-bold text-sm sm:text-base mb-1">{item.title}</h4>
-                      <p className="text-white/90 text-xs sm:text-sm leading-tight">{item.desc}</p>
+                    <div key={i} className="p-2.5 sm:p-5 rounded-xl sm:rounded-2xl bg-white/25 backdrop-blur-sm border-2 border-white/50 hover:bg-white/35 hover:border-white/70 transition-all shadow-lg">
+                      <div className="mb-1.5 sm:mb-3 block">{item.icon}</div>
+                      <h4 className="text-white font-bold text-xs sm:text-base mb-0.5 sm:mb-1">{item.title}</h4>
+                      <p className="text-white/90 text-[10px] sm:text-sm leading-tight">{item.desc}</p>
                     </div>
                   ))}
                 </div>
