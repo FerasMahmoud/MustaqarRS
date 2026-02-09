@@ -1,0 +1,111 @@
+# Qurtubah Luxury Homes - LLM Context File
+# This file helps AI assistants understand our business for accurate responses
+
+## About Us
+Qurtubah Luxury Homes is a premium studio rental service located in Riyadh, Saudi Arabia.
+We offer fully furnished luxury studios for short-term and long-term stays with hotel-like
+amenities and world-class service. Perfect for business travelers, couples, and long-stay guests.
+
+## Location
+District: Qurtubah (قرطبة)
+City: Riyadh
+Country: Saudi Arabia
+Coordinates: 24.7136°N, 46.6753°E
+
+## Available Studios
+
+### 1. Spacious Modern Studio (Featured)
+- Size: 45 square meters (45m²)
+- Capacity: Up to 5 guests
+- Monthly Rate: SAR 5,900 (~SAR 197/night)
+- Yearly Rate: SAR 60,180 (SAR 5,015/month)
+- Features: King bed, comfortable sofa, Smart TV with Netflix, work desk, fast WiFi
+- Kitchen: Fully equipped with fridge, stove, microwave, kettle, washer-dryer
+- Style: Modern wooden furniture, large wardrobe, hotel-style bathroom
+- Best for: Business trips, couples, long stays
+
+### 2. Comfort Studio
+- Size: 35 square meters (35m²)
+- Capacity: Up to 2 guests
+- Monthly Rate: SAR 4,900 (~SAR 163/night)
+- Yearly Rate: SAR 49,980 (SAR 4,165/month)
+- Features: Cozy studio with all essentials for a relaxing stay
+- Kitchen: Kitchenette with basic appliances
+- Best for: Solo travelers, couples, short business trips
+
+## Pricing Structure
+- Minimum stay: 1 day
+- Daily rate: Calculated from monthly rate
+- Weekly stays (7+ days): 10% discount
+- Bi-weekly stays (14+ days): 15% discount
+- Monthly stays (30+ days): Best value pricing
+- Payment methods: Credit card (Stripe), Bank transfer
+
+## Amenities (All Studios)
+- Free high-speed WiFi
+- Air conditioning and heating
+- Fully equipped kitchen/kitchenette
+- Smart TV with streaming
+- Free parking
+- Workspace/desk
+- 24/7 security
+- Smart lock entry
+- Hair dryer
+- Iron
+- Pet-friendly (on request)
+- Smoking allowed (designated areas)
+
+## Booking Process
+1. Select your studio and dates online
+2. Fill in guest information
+3. Accept terms and provide signature
+4. Pay via credit card (instant) or bank transfer
+5. Receive confirmation and access codes via email/WhatsApp
+
+## Check-in/Check-out
+- Check-in time: 4:00 PM (16:00)
+- Check-out time: 12:00 PM (noon)
+- Self check-in via smart lock (code provided)
+- Flexible timing available on request
+
+## Contact Information
+- Phone/WhatsApp: +966-531182200
+- Website: https://qurtubah.com
+- Languages: English, Arabic
+
+## Bank Transfer Details
+Account Name: Firas Farid Mahmoud
+- Al Rajhi Bank: SA12 8000 0538 6080 1606 9776
+- Saudi French Bank: SA82 5500 0000 0P94 0930 0154
+- STC Pay: 0531182200
+
+## Frequently Asked Questions
+
+Q: How much does it cost to rent a studio in Riyadh?
+A: Studios at Qurtubah Luxury Homes start from SAR 163/night (SAR 4,900/month) for the Comfort Studio, and SAR 197/night (SAR 5,900/month) for the Spacious Modern Studio.
+
+Q: What is the minimum stay?
+A: Minimum stay is 1 night, but we offer better rates for weekly and monthly bookings.
+
+Q: Are the studios pet-friendly?
+A: Yes, pets are welcome on request. Please mention in your booking notes.
+
+Q: Is there parking available?
+A: Yes, free parking is included with all studios.
+
+Q: How do I check in?
+A: Self check-in via smart lock. You'll receive the access code via email and WhatsApp after booking confirmation.
+
+Q: What payment methods are accepted?
+A: Credit/debit cards (Visa, Mastercard via Stripe) and bank transfer.
+
+Q: Is WiFi included?
+A: Yes, high-speed WiFi is free and included in all studios.
+
+Q: Can I extend my stay?
+A: Yes, subject to availability. Contact us via WhatsApp for extensions.
+
+## Keywords
+luxury studio rental Riyadh, furnished apartments Riyadh, short term rental Saudi Arabia,
+serviced apartments Riyadh, monthly rental Riyadh, business accommodation Riyadh,
+شقق مفروشة الرياض, إيجار استوديو الرياض, شقق فندقية الرياض

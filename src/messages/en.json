@@ -1,0 +1,448 @@
+{
+  "common": {
+    "language": "English",
+    "switchLanguage": "العربية",
+    "home": "Home",
+    "aboutUs": "About Us",
+    "services": "Services",
+    "rooms": "Rooms",
+    "amenities": "Amenities",
+    "calendar": "Availability",
+    "location": "Location",
+    "contact": "Contact Us",
+    "bookNow": "Book Now",
+    "learnMore": "Learn More",
+    "viewDetails": "View Details",
+    "currency": "SAR"
+  },
+  "hero": {
+    "title": "Your Perfect Stay in Riyadh",
+    "subtitle": "Modern Studio Apartments for Long-Term Rental",
+    "description": "Experience comfort and convenience in our fully-furnished studio apartments. Perfect for professionals and families looking for a home away from home.",
+    "badge": "Premium Studios Available",
+    "stats": {
+      "studios": "Premium Studios",
+      "rating": "Guest Rating",
+      "secure": "Secure Payment",
+      "support": "Support"
+    }
+  },
+  "rooms": {
+    "title": "Our Studio Apartments",
+    "subtitle": "Choose your perfect space for monthly or yearly rental. All utilities included.",
+    "location": "Riyadh, Saudi Arabia",
+    "monthlyFrom": "From",
+    "orYearly": "or yearly",
+    "saveYearly": "Save {percent}% yearly",
+    "perMonth": "/month"
+  },
+  "amenities": {
+    "title": "What's Included",
+    "subtitle": "All our studios come fully equipped with everything you need",
+    "wifi": {
+      "title": "High-Speed WiFi",
+      "description": "Fast and reliable internet connection"
+    },
+    "parking": {
+      "title": "Free Parking",
+      "description": "Secure parking space included"
+    },
+    "security": {
+      "title": "24/7 Security",
+      "description": "Round-the-clock security and surveillance"
+    },
+    "coffee": {
+      "title": "Coffee Lounge",
+      "description": "Complimentary coffee and refreshments"
+    },
+    "kitchen": {
+      "title": "Fully Equipped Kitchen",
+      "description": "Everything you need to cook at home"
+    },
+    "pool": {
+      "title": "Swimming Pool",
+      "description": "Access to luxury pool and spa"
+    },
+    "gym": {
+      "title": "Fitness Center",
+      "description": "Modern gym with premium equipment"
+    },
+    "24hours": {
+      "title": "24/7 Reception",
+      "description": "Front desk service around the clock"
+    }
+  },
+  "calendar": {
+    "title": "Check Availability",
+    "subtitle": "View our availability calendar and book your dates"
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "subtitle": "Find answers to common questions about our studio rentals",
+    "questions": {
+      "q1": "What is the minimum rental period?",
+      "a1": "We offer monthly and yearly rental options. The minimum rental period is one month.",
+      "q2": "What documents do I need to book?",
+      "a2": "You will need a valid passport, Saudi ID, or Iqama, along with your contact information.",
+      "q3": "Are utilities included in the rent?",
+      "a3": "Yes, water and electricity are included. High-speed WiFi is also provided at no extra cost.",
+      "q4": "Can I have visitors?",
+      "a4": "Yes, guests are welcome. Please inform management for overnight visitors.",
+      "q5": "What is the cancellation policy?",
+      "a5": "Cancellations made 30 days before check-in receive a full refund. Please contact us for more details.",
+      "q6": "What payment methods do you accept?",
+      "a6": "We accept bank transfers, credit cards (Visa, Mastercard), and digital payment platforms like Apple Pay and mada. Full payment details are provided during booking."
+    }
+  },
+  "contact": {
+    "title": "Get in Touch",
+    "subtitle": "Have questions? We're here to help you find your perfect stay.",
+    "name": "Full Name",
+    "email": "Email Address",
+    "phone": "Phone Number",
+    "message": "Your Message",
+    "send": "Send Message",
+    "address": "Riyadh, Saudi Arabia",
+    "inquiryTitle": "Send an Inquiry",
+    "inquirySubtitle": "Not ready to book? Send us a message and we'll get back to you."
+  },
+  "services": {
+    "title": "Welcome & enjoy your stay in our apartment",
+    "subtitle": "We offer you a range of distinctive services to ensure a comfortable and unforgettable stay",
+    "swimmingPool": {
+      "title": "Swimming Pool",
+      "description": "Enjoy relaxing times in the private swimming pool"
+    },
+    "kitchen": {
+      "title": "Fully Equipped Kitchen",
+      "description": "Full kitchen with all necessary appliances and tools"
+    },
+    "internet": {
+      "title": "High-Speed Internet",
+      "description": "Ultra-fast internet connection throughout the building"
+    },
+    "security": {
+      "title": "24/7 Security",
+      "description": "Integrated security system and round-the-clock guards"
+    }
+  },
+  "explore": {
+    "title": "Explore all corners of the world with us",
+    "description": "We offer you a luxurious stay experience in the heart of Riyadh. Our studios are carefully designed to provide the utmost comfort and elegance, with all the modern amenities you need.",
+    "stats": {
+      "branches": "Branches",
+      "studios": "Studios available",
+      "years": "Years",
+      "experience": "of experience"
+    },
+    "contactInfo": {
+      "callUs": "Call us",
+      "emailUs": "Email us",
+      "address": "Address",
+      "phone": "+966531182200",
+      "email": "Firas@fitechco.com",
+      "location": "Riyadh, Saudi Arabia"
+    }
+  },
+  "testimonials": {
+    "title": "What Our Guests Say"
+  },
+  "locationSection": {
+    "title": "Location",
+    "address": "Riyadh, Saudi Arabia",
+    "directions": "Get Directions"
+  },
+  "features": {
+    "title": "Why Choose Our Studios",
+    "description": "Experience luxury living with our premium features designed for modern professionals.",
+    "imageAlt": "Luxury studio apartment",
+    "cta": "Explore More",
+    "items": {
+      "premium": {
+        "title": "Premium Amenities",
+        "description": "High-end furnishings, modern appliances, and luxury finishes throughout"
+      },
+      "concierge": {
+        "title": "24/7 Concierge Service",
+        "description": "Dedicated support team available round the clock for all your needs"
+      },
+      "location": {
+        "title": "Prime Location",
+        "description": "Strategically located in Riyadh's most desirable neighborhoods"
+      },
+      "flexible": {
+        "title": "Flexible Booking",
+        "description": "Monthly and yearly options tailored to your lifestyle and budget"
+      }
+    }
+  },
+  "footer": {
+    "rights": "All rights reserved",
+    "terms": "Terms of Service",
+    "privacy": "Privacy Policy",
+    "tagline": "Your home away from home in Riyadh",
+    "quickLinks": "Quick Links",
+    "services": "Services",
+    "followUs": "Follow Us",
+    "about": "About Us",
+    "gallery": "Gallery",
+    "testimonials": "Testimonials",
+    "support": "Support",
+    "newsletter": {
+      "title": "Subscribe to Our Newsletter",
+      "description": "Get the latest updates on available studios and exclusive offers",
+      "placeholder": "Enter your email",
+      "button": "Subscribe",
+      "successMessage": "Thank you for subscribing!",
+      "errorMessage": "Failed to subscribe. Please try again.",
+      "alreadySubscribed": "You're already subscribed!"
+    }
+  },
+  "terms": {
+    "title": "Terms & Conditions",
+    "lastUpdated": "Last updated",
+    "importantNotice": "Please read these Terms and Conditions carefully before making a reservation. By booking with Qurtubah Luxury Homes, you acknowledge that you have read, understood, and agree to be bound by these terms.",
+    "sections": {
+      "acceptance": {
+        "title": "1. Acceptance of Terms",
+        "content": "By making a reservation with Qurtubah Luxury Homes, you confirm that you are at least 18 years of age and have the legal authority to enter into this agreement. These Terms and Conditions constitute a legally binding agreement between you (the Guest) and Qurtubah Luxury Homes (the Property). Your booking confirmation serves as acceptance of these terms in their entirety."
+      },
+      "booking": {
+        "title": "2. Booking & Payment",
+        "content": "All bookings are subject to availability and confirmation. Payment is required to secure your reservation. We accept various payment methods including bank transfers, credit cards, and approved digital payment platforms.",
+        "requirements": [
+          "Full payment is required at the time of booking for stays under 30 days",
+          "For monthly rentals, first month's rent plus security deposit is due upon booking",
+          "A refundable security deposit equal to one month's rent is required",
+          "Valid identification (passport, Saudi ID, or Iqama) must be provided",
+          "All prices are in Saudi Riyal (SAR) and include applicable VAT",
+          "Yearly bookings receive up to 15% discount on total rental amount"
+        ]
+      },
+      "cancellation": {
+        "title": "3. Cancellation Policy",
+        "content": "We understand that plans may change. Our cancellation policy is designed to be fair to all parties while protecting our business operations:",
+        "policies": [
+          "Cancellations 30+ days before check-in: Full refund minus 500 SAR administrative fee",
+          "Cancellations 15-29 days before check-in: 50% refund of total booking amount",
+          "Cancellations 7-14 days before check-in: 25% refund of total booking amount",
+          "Cancellations less than 7 days before check-in: No refund",
+          "No-shows will be charged the full booking amount",
+          "Early departure does not qualify for a refund",
+          "Refunds are processed within 7-10 business days to original payment method"
+        ]
+      },
+      "checkInOut": {
+        "title": "4. Check-In & Check-Out",
+        "content": "Smooth transitions help us maintain our high standards of service. Please adhere to the following check-in and check-out procedures:",
+        "details": [
+          "Standard check-in time: 3:00 PM (15:00)",
+          "Standard check-out time: 12:00 PM (Noon)",
+          "Early check-in available upon request (subject to availability, additional fee may apply)",
+          "Late check-out available upon request (subject to availability, additional fee may apply)",
+          "Key collection and property walkthrough required at check-in",
+          "Property inspection will be conducted at check-out",
+          "All keys and access cards must be returned at check-out",
+          "Late check-out without prior approval may incur additional charges"
+        ]
+      },
+      "guestResponsibilities": {
+        "title": "5. Guest Responsibilities",
+        "content": "As a guest, you are responsible for maintaining the property and respecting our community guidelines. Failure to comply may result in immediate termination of your stay without refund:",
+        "rules": [
+          "Maintain the property in clean and orderly condition",
+          "Quiet hours must be observed from 10:00 PM to 8:00 AM",
+          "No smoking inside the property (designated outdoor areas only)",
+          "No illegal substances or activities on the premises",
+          "No pets allowed without prior written approval (pet deposit required)",
+          "Guests must be registered; unauthorized occupants are not permitted",
+          "Report any maintenance issues or damages immediately",
+          "Do not disturb other residents or neighbors",
+          "No subletting, short-term rentals, or commercial use of the property",
+          "Maximum occupancy limits must be respected",
+          "Dispose of garbage properly using designated areas",
+          "No modifications or alterations to the property without written consent"
+        ]
+      },
+      "included": {
+        "title": "6. What's Included",
+        "content": "Your rental includes a comprehensive package of amenities and services designed for comfortable living:",
+        "items": [
+          "Fully furnished studio apartment with premium furnishings",
+          "High-speed WiFi internet connection",
+          "Water and electricity utilities (fair usage policy applies)",
+          "Weekly housekeeping service",
+          "24/7 building security and CCTV monitoring",
+          "Access to fitness center and swimming pool",
+          "Dedicated parking space",
+          "Air conditioning and heating",
+          "Full kitchen with appliances and cookware",
+          "Fresh linens and towels",
+          "Cable/satellite TV with international channels",
+          "24/7 customer support and maintenance assistance"
+        ]
+      },
+      "liability": {
+        "title": "7. Liability & Insurance",
+        "content": "While we strive to ensure your safety and comfort, certain limitations of liability apply. We strongly recommend guests obtain travel or rental insurance:",
+        "points": [
+          "Qurtubah Luxury Homes is not liable for loss, theft, or damage to personal belongings",
+          "Guests are responsible for damages caused by themselves or their visitors",
+          "Security deposit will be used to cover any damages beyond normal wear and tear",
+          "We are not responsible for interruptions to utilities or services beyond our control",
+          "Personal injury claims are limited to cases of proven negligence on our part",
+          "Guests should secure valuables in the provided safe",
+          "We recommend guests maintain their own travel/rental insurance",
+          "Maximum liability is limited to the amount of rent paid for the affected period"
+        ]
+      },
+      "privacy": {
+        "title": "8. Privacy & Data Protection",
+        "content": "Your privacy is important to us. We collect and process personal information solely for booking management, property access, communication about your stay, and legal compliance. Your data is stored securely and never sold to third parties. For detailed information about our data practices, please refer to our Privacy Policy. You have the right to access, correct, or request deletion of your personal data by contacting our privacy team."
+      },
+      "rightToRefuse": {
+        "title": "9. Right to Refuse Service",
+        "content": "Qurtubah Luxury Homes reserves the right to refuse or terminate service to any guest who violates these Terms and Conditions, engages in illegal activities, damages property, disturbs other guests or neighbors, provides false information during booking, or presents a safety risk. In such cases, no refund will be provided, and legal action may be pursued if necessary."
+      },
+      "modifications": {
+        "title": "10. Modifications to Terms",
+        "content": "We reserve the right to modify these Terms and Conditions at any time. Material changes will be communicated to current guests via email at least 30 days before taking effect. Continued use of our services after modifications constitutes acceptance of the updated terms. The most current version will always be available on our website."
+      },
+      "governingLaw": {
+        "title": "11. Governing Law",
+        "content": "These Terms and Conditions are governed by and construed in accordance with the laws of the Kingdom of Saudi Arabia. Any disputes arising from these terms or your stay shall be subject to the exclusive jurisdiction of the courts in Riyadh, Saudi Arabia. We encourage guests to first attempt to resolve any disputes through our customer service team before pursuing legal remedies."
+      },
+      "rentalContractTerms": {
+        "title": "12. Rental Contract Terms",
+        "content": "In addition to the above Terms and Conditions, the following rental contract terms apply to all confirmed bookings:",
+        "terms": [
+          "1. This rental agreement is subject to the laws of the Kingdom of Saudi Arabia and shall be enforced in accordance with Saudi laws and regulations.",
+          "2. The rental period shall be paid monthly (or as otherwise agreed). The rental amount is non-refundable once the rental period has commenced.",
+          "3. The guest must submit a valid identification document (Saudi ID, Iqama, or Passport) for verification purposes upon check-in.",
+          "4. Maintenance and repairs of structural elements and building systems are the responsibility of the property owner. The guest is responsible for maintenance of items provided for guest use.",
+          "5. Early cancellation of the rental agreement is subject to a penalty charge as specified in the Cancellation Policy. No refunds will be issued for the cancellation fees.",
+          "6. The guest shall be responsible for payment of electricity and water bills according to fair usage, or as specified in the booking agreement. The amount will be billed separately.",
+          "7. The guest is liable for any damage to the property caused by their actions or negligence. Damage repairs shall be deducted from the security deposit, or an invoice shall be issued for repair costs.",
+          "8. Key handover shall occur during the check-in process between the property management and the guest. The guest is responsible for the safekeeping of all keys and access cards.",
+          "9. A security deposit equal to one month's rent is required and shall be refunded within 14 days after check-out, provided the property is in acceptable condition.",
+          "10. Subletting of the property, short-term rental of the property to third parties, or any commercial use of the property is strictly prohibited.",
+          "11. The guest agrees to maintain peaceful enjoyment of the property and shall not engage in any illegal activities or create disturbances that affect other residents.",
+          "12. The property owner reserves the right to enter the property for maintenance, repairs, or inspections with 24 hours advance notice, except in cases of emergency.",
+          "13. This rental agreement may be amended or terminated by either party with written notice as specified in the applicable laws. Any amendments must be made in writing and signed by both parties."
+        ]
+      },
+      "contact": {
+        "title": "13. Contact Information",
+        "content": "For questions about these Terms and Conditions, booking inquiries, or to report any issues during your stay, please contact us through the following channels:",
+        "email": "Firas@fitechco.com",
+        "phone": "+966531182200"
+      }
+    },
+    "form": {
+      "agreeToTerms": "I agree to the Terms and Conditions",
+      "mustAcceptTerms": "You must accept the Terms and Conditions"
+    },
+    "page": {
+      "title": "Terms and Conditions",
+      "description": "Please read these Terms and Conditions carefully before making a reservation"
+    }
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "lastUpdated": "Last updated",
+    "sections": {
+      "introduction": {
+        "title": "Introduction",
+        "content": "We are committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our studio rental services and website."
+      },
+      "dataCollection": {
+        "title": "Data Collection",
+        "content": "We collect information you provide directly, such as:",
+        "items": [
+          "Personal information: name, email, phone number",
+          "Identification documents: passport, Saudi ID, or Iqama",
+          "Financial information: payment and billing details",
+          "Communication: messages, inquiries, and feedback",
+          "Booking information: dates, preferences, and special requests",
+          "Emergency contacts and medical information (if provided)"
+        ]
+      },
+      "dataUsage": {
+        "title": "How We Use Your Data",
+        "content": "We use your information for the following purposes:",
+        "purposes": [
+          "Processing and managing bookings",
+          "Communicating about your reservation and stay",
+          "Processing payments and billing",
+          "Improving our services and website",
+          "Responding to inquiries and customer support",
+          "Complying with legal obligations",
+          "Preventing fraud and ensuring security",
+          "Marketing and promotional communications (with consent)"
+        ]
+      },
+      "cookies": {
+        "title": "Cookies & Tracking",
+        "content": "Our website uses cookies to enhance user experience. Cookies are small files stored on your device that help us:",
+        "details": [
+          "Remember your preferences",
+          "Improve website functionality",
+          "Analyze website traffic",
+          "Personalize content and advertisements",
+          "You can disable cookies through your browser settings, but this may affect website functionality"
+        ]
+      },
+      "thirdParties": {
+        "title": "Third-Party Services",
+        "content": "We may share your information with trusted third parties for specific purposes:",
+        "services": [
+          "Payment processors and banks for transaction handling",
+          "Booking systems and property management software",
+          "Email and communication service providers",
+          "Customer support and communication platforms",
+          "Analytics providers (anonymized data)",
+          "Legal and compliance advisors when required"
+        ]
+      },
+      "dataSecurity": {
+        "title": "Data Security",
+        "content": "We implement industry-standard security measures to protect your personal information from unauthorized access, disclosure, and misuse. However, no method of transmission is 100% secure. We encourage you to use strong passwords and keep your login credentials confidential."
+      },
+      "dataRetention": {
+        "title": "Data Retention",
+        "content": "We retain your personal data for as long as necessary to provide our services and fulfill the purposes outlined in this policy. Booking records are kept for a minimum of 7 years for legal and tax compliance. You can request deletion of your data subject to legal requirements."
+      },
+      "userRights": {
+        "title": "Your Rights",
+        "content": "You have the following rights regarding your personal data:",
+        "rights": [
+          "Right to access your personal data",
+          "Right to correct inaccurate information",
+          "Right to delete your data (right to be forgotten)",
+          "Right to restrict processing",
+          "Right to data portability",
+          "Right to opt-out of marketing communications",
+          "To exercise these rights, contact us at privacy@soom.sa"
+        ]
+      },
+      "children": {
+        "title": "Children's Privacy",
+        "content": "Our services are not intended for children under 18. We do not knowingly collect personal information from children. If we discover that a child has provided us with personal information, we will delete such information immediately."
+      },
+      "externalLinks": {
+        "title": "External Links",
+        "content": "Our website may contain links to external websites. We are not responsible for the privacy practices of third-party websites. Please review their privacy policies before providing any personal information."
+      },
+      "changes": {
+        "title": "Changes to This Policy",
+        "content": "We may update this privacy policy periodically. We will notify you of significant changes via email or by posting an updated policy on our website. Your continued use of our services indicates acceptance of the revised policy."
+      },
+      "contact": {
+        "title": "Contact Us",
+        "content": "If you have questions about this privacy policy or our privacy practices, please contact us:",
+        "email": "Firas@fitechco.com",
+        "phone": "+966531182200"
+      }
+    }
+  }
+}

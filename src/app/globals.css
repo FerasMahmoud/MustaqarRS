@@ -1,0 +1,1620 @@
+@import "tailwindcss";
+
+@theme {
+  /* Luxury Light Color Palette - Matching Dribbble Design */
+  --color-gold: #C9A96E;
+  --color-gold-light: #D4B87A;
+  --color-gold-dark: #B89355;
+  --color-cream: #FAF7F2;
+  --color-cream-dark: #F5F0E8;
+  --color-cream-light: #FDFCFA;
+  --color-warm-beige: #F0EBE1;
+  --color-dot-pattern: rgba(201, 169, 110, 0.15);
+  --color-warm-white: #FFFBF7;
+  --color-charcoal: #2D2D2D;
+  --color-charcoal-light: #4A4A4A;
+
+  --color-background: var(--color-cream);
+  --color-foreground: #2D2D2D;
+  --color-card: #FFFFFF;
+  --color-card-foreground: #2D2D2D;
+  --color-popover: #FFFFFF;
+  --color-popover-foreground: #2D2D2D;
+  --color-primary: #C9A96E;
+  --color-primary-foreground: #FFFFFF;
+  --color-secondary: #2D2D2D;
+  --color-secondary-foreground: #FFFFFF;
+  --color-muted: #F0EBE3;
+  --color-muted-foreground: #6B6B6B;
+  --color-accent: #C9A96E;
+  --color-accent-foreground: #FFFFFF;
+  --color-destructive: #ef4444;
+  --color-destructive-foreground: #fafafa;
+  --color-border: #E8E3DB;
+  --color-input: #E8E3DB;
+  --color-ring: #C9A96E;
+  --radius: 0.75rem;
+  --font-sans: var(--font-inter), var(--font-noto-sans-arabic), system-ui, sans-serif;
+  --font-serif: 'Playfair Display', 'Georgia', serif;
+}
+
+/* Base styles */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-foreground);
+  font-family: var(--font-sans);
+  font-size: 16px;
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ============================================
+   PROFESSIONAL TYPOGRAPHY SYSTEM
+   ============================================ */
+
+/* Elegant heading styles */
+.heading-serif {
+  font-family: var(--font-serif);
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+}
+
+/* Section titles - large display headings */
+.text-display-xl {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  line-height: 1.1;
+  font-weight: 300;
+  letter-spacing: -0.02em;
+}
+
+.text-display-lg {
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  line-height: 1.15;
+  font-weight: 300;
+  letter-spacing: -0.01em;
+}
+
+/* Primary headings */
+.text-heading-xl {
+  font-size: clamp(1.75rem, 3vw, 2.5rem);
+  line-height: 1.2;
+  font-weight: 500;
+}
+
+.text-heading-lg {
+  font-size: clamp(1.5rem, 2.5vw, 2rem);
+  line-height: 1.25;
+  font-weight: 500;
+}
+
+.text-heading-md {
+  font-size: clamp(1.25rem, 2vw, 1.5rem);
+  line-height: 1.3;
+  font-weight: 500;
+}
+
+/* Body text - optimized for readability */
+.text-body-xl {
+  font-size: 1.25rem;
+  line-height: 1.7;
+  font-weight: 400;
+  color: #3D3D3D;
+}
+
+.text-body-lg {
+  font-size: 1.125rem;
+  line-height: 1.75;
+  font-weight: 400;
+  color: #3D3D3D;
+}
+
+.text-body-md {
+  font-size: 1rem;
+  line-height: 1.7;
+  font-weight: 400;
+  color: #4A4A4A;
+}
+
+.text-body-sm {
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  font-weight: 400;
+  color: #5A5A5A;
+}
+
+/* Subtitle/lead text */
+.text-subtitle {
+  font-size: clamp(1.125rem, 1.5vw, 1.375rem);
+  line-height: 1.6;
+  font-weight: 400;
+  color: #5A5A5A;
+}
+
+/* Labels and small text */
+.text-label {
+  font-size: 0.8125rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-gold);
+}
+
+.text-caption {
+  font-size: 0.875rem;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #6B6B6B;
+}
+
+/* Professional text colors */
+.text-primary-dark {
+  color: #1A1A1A;
+}
+
+.text-primary {
+  color: #2D2D2D;
+}
+
+.text-secondary {
+  color: #4A4A4A;
+}
+
+.text-muted {
+  color: #6B6B6B;
+}
+
+.text-subtle {
+  color: #8A8A8A;
+}
+
+/* ============================================
+   BOOKING PAGE TYPOGRAPHY SYSTEM
+   Responsive text sizing for booking components
+   ============================================ */
+
+/* Hero/Section title - prominent headings */
+.text-booking-hero {
+  font-size: clamp(1.25rem, 2.5vw, 1.5rem);
+  line-height: 1.3;
+  font-weight: 500;
+  color: #2D2D2D;
+}
+
+/* Section headers - month/year, summary titles */
+.text-booking-section {
+  font-size: clamp(1.125rem, 2vw, 1.375rem);
+  line-height: 1.35;
+  font-weight: 500;
+  color: #2D2D2D;
+}
+
+/* Large labels - day headers (Mon, Tue, etc.) */
+.text-booking-label-lg {
+  font-size: 0.8125rem;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #8B7355;
+}
+
+/* Standard labels */
+.text-booking-label {
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #8B7355;
+}
+
+/* Primary body text - calendar dates, main content */
+.text-booking-body {
+  font-size: clamp(0.9375rem, 1.5vw, 1.0625rem);
+  line-height: 1.5;
+  font-weight: 400;
+  color: #2D2D2D;
+}
+
+/* Secondary body text - descriptions, legends */
+.text-booking-body-sm {
+  font-size: 0.875rem;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #6B6B6B;
+}
+
+/* Small text - fine print, timestamps */
+.text-booking-xs {
+  font-size: 0.75rem;
+  line-height: 1.4;
+  font-weight: 400;
+  color: #8B7355;
+}
+
+/* Price typography for booking context */
+.text-price-hero {
+  font-size: clamp(2.5rem, 5vw + 1rem, 4rem);
+  line-height: 1.1;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  font-variant-numeric: tabular-nums;
+}
+
+.text-price-large {
+  font-size: clamp(1.75rem, 3vw + 0.5rem, 2.25rem);
+  line-height: 1.2;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  font-variant-numeric: tabular-nums;
+}
+
+.text-price-medium {
+  font-size: clamp(1.25rem, 2vw + 0.5rem, 1.75rem);
+  line-height: 1.3;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+}
+
+/* Tabular numbers utility for aligned pricing */
+.font-tabular {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Geometric hexagonal/cubic pattern overlay */
+.geometric-pattern {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='92' viewBox='0 0 80 92'%3E%3Cpath d='M40 0 L80 23 L80 69 L40 92 L0 69 L0 23 Z' fill='none' stroke='%23C9A96E' stroke-width='0.5' stroke-opacity='0.2'/%3E%3Cpath d='M40 0 L40 46 M80 23 L40 46 M0 23 L40 46' fill='none' stroke='%23C9A96E' stroke-width='0.5' stroke-opacity='0.2'/%3E%3C/svg%3E");
+  background-size: 80px 92px;
+}
+
+/* Dot pattern background utility */
+.bg-dot-pattern {
+  background-image: radial-gradient(circle, var(--color-dot-pattern) 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+/* Gold geometric pattern overlay */
+.geometric-pattern-gold {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='92' viewBox='0 0 80 92'%3E%3Cpath d='M40 0 L80 23 L80 69 L40 92 L0 69 L0 23 Z' fill='none' stroke='%23C9A96E' stroke-width='0.5' stroke-opacity='0.15'/%3E%3Cpath d='M40 0 L40 46 M80 23 L40 46 M0 23 L40 46' fill='none' stroke='%23C9A96E' stroke-width='0.5' stroke-opacity='0.15'/%3E%3C/svg%3E");
+  background-size: 80px 92px;
+}
+
+/* Luxury Animations */
+/* Scroll-triggered staggered reveal animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInScale {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+@keyframes pulse-gold {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(201, 169, 110, 0.4); }
+  50% { box-shadow: 0 0 15px 5px rgba(201, 169, 110, 0); }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.7s ease-out forwards;
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.5s ease-out forwards;
+}
+
+.animate-slide-in-left {
+  animation: slideInLeft 0.7s ease-out forwards;
+}
+
+.animate-slide-in-right {
+  animation: slideInRight 0.7s ease-out forwards;
+}
+
+.animate-scale-in {
+  animation: scaleIn 0.5s ease-out forwards;
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+.animate-pulse-gold {
+  animation: pulse-gold 2s ease-in-out infinite;
+}
+
+/* Scroll-triggered animation base class */
+.animate-on-scroll {
+  opacity: 0;
+  animation: none;
+}
+
+.animate-on-scroll.in-view {
+  animation-fill-mode: forwards;
+  animation-duration: 600ms;
+  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.animate-on-scroll.in-view.fade-in-up {
+  animation-name: fadeInUp;
+}
+
+.animate-on-scroll.in-view.fade-in-scale {
+  animation-name: fadeInScale;
+}
+
+/* Animation delay utilities for staggered reveals */
+.delay-100 { animation-delay: 0.1s; }
+.delay-200 { animation-delay: 0.2s; }
+.delay-300 { animation-delay: 0.3s; }
+.delay-400 { animation-delay: 0.4s; }
+
+/* Legacy animation delay classes for backward compatibility */
+.animation-delay-100 { animation-delay: 0.1s; }
+.animation-delay-200 { animation-delay: 0.2s; }
+.animation-delay-300 { animation-delay: 0.3s; }
+.animation-delay-400 { animation-delay: 0.4s; }
+.animation-delay-500 { animation-delay: 0.5s; }
+.animation-delay-600 { animation-delay: 0.6s; }
+.animation-delay-700 { animation-delay: 0.7s; }
+.animation-delay-800 { animation-delay: 0.8s; }
+
+/* Shimmer effect for loading states */
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+.animate-shimmer {
+  background: linear-gradient(90deg, var(--color-charcoal-light) 25%, #5a5a5a 50%, var(--color-charcoal-light) 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+}
+
+/* Slide carousel animations */
+@keyframes slideInFromRight {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.animate-slide-from-right {
+  animation: slideInFromRight 0.5s ease-out forwards;
+}
+
+.animate-slide-from-left {
+  animation: slideInFromLeft 0.5s ease-out forwards;
+}
+
+/* Bounce animation for arrows */
+@keyframes bounceX {
+  0%, 100% { transform: translateX(0); }
+  50% { transform: translateX(5px); }
+}
+
+@keyframes bounceXReverse {
+  0%, 100% { transform: translateX(0); }
+  50% { transform: translateX(-5px); }
+}
+
+.animate-bounce-x {
+  animation: bounceX 1s ease-in-out infinite;
+}
+
+.animate-bounce-x-reverse {
+  animation: bounceXReverse 1s ease-in-out infinite;
+}
+
+/* Glow effect for interactive elements */
+@keyframes glow {
+  0%, 100% { box-shadow: 0 0 5px rgba(201, 169, 110, 0.3); }
+  50% { box-shadow: 0 0 20px rgba(201, 169, 110, 0.5); }
+}
+
+.animate-glow {
+  animation: glow 2s ease-in-out infinite;
+}
+
+/* Subtle pulse animation for gold badge */
+@keyframes pulse-subtle {
+  0%, 100% {
+    opacity: 1;
+    box-shadow: 0 4px 20px rgba(201, 169, 110, 0.4);
+  }
+  50% {
+    opacity: 0.95;
+    box-shadow: 0 4px 30px rgba(201, 169, 110, 0.7);
+  }
+}
+
+.animate-pulse-subtle {
+  animation: pulse-subtle 3s ease-in-out infinite;
+}
+
+/* Ripple effect for buttons */
+@keyframes ripple {
+  0% {
+    transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(4);
+    opacity: 0;
+  }
+}
+
+.btn-ripple {
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-ripple::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  background-image: radial-gradient(circle, rgba(255, 255, 255, 0.3) 10%, transparent 10.01%);
+  background-repeat: no-repeat;
+  background-position: 50%;
+  transform: scale(10);
+  opacity: 0;
+  transition: transform 0.5s, opacity 1s;
+}
+
+.btn-ripple:active::after {
+  transform: scale(0);
+  opacity: 0.3;
+  transition: 0s;
+}
+
+/* Gold gradient text */
+.text-gold-gradient {
+  background: linear-gradient(135deg, #C9A96E 0%, #D4B87A 50%, #C9A96E 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Primary button style - matching design */
+.btn-primary {
+  background-color: var(--color-gold);
+  color: white;
+  font-weight: 500;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: var(--color-gold-dark);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(201, 169, 110, 0.3);
+}
+
+/* Secondary button style */
+.btn-secondary {
+  background-color: var(--color-charcoal);
+  color: white;
+  font-weight: 500;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  transition: all 0.3s ease;
+}
+
+.btn-secondary:hover {
+  background-color: var(--color-charcoal-light);
+}
+
+/* Outline button */
+.btn-outline {
+  background-color: transparent;
+  border: 1px solid var(--color-border);
+  color: var(--color-foreground);
+  font-weight: 500;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  transition: all 0.3s ease;
+}
+
+.btn-outline:hover {
+  border-color: var(--color-gold);
+  color: var(--color-gold);
+}
+
+/* Card styles */
+.card-luxury {
+  background: white;
+  border-radius: 1rem;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease;
+}
+
+.card-luxury:hover {
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+}
+
+/* Section styles */
+.section-padding {
+  padding: 5rem 0;
+}
+
+.section-dark {
+  background-color: var(--color-charcoal);
+  color: white;
+}
+
+.section-cream {
+  background-color: var(--color-cream);
+}
+
+.section-cream-dark {
+  background-color: var(--color-cream-dark);
+}
+
+.section-white {
+  background-color: white;
+}
+
+/* Input styles */
+.input-luxury {
+  background: white;
+  border: 1px solid var(--color-border);
+  border-radius: 0.5rem;
+  padding: 0.875rem 1rem;
+  transition: all 0.2s ease;
+  width: 100%;
+}
+
+.input-luxury:focus {
+  outline: none;
+  border-color: var(--color-gold);
+  box-shadow: 0 0 0 3px rgba(201, 169, 110, 0.1);
+}
+
+/* Badge styles */
+.badge-gold {
+  background-color: rgba(201, 169, 110, 0.15);
+  color: var(--color-gold-dark);
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* RTL Support */
+[dir="rtl"] {
+  text-align: right;
+}
+
+[dir="ltr"] {
+  text-align: left;
+}
+
+/* Font configuration */
+html[lang="ar"] {
+  font-family: var(--font-noto-sans-arabic), 'Noto Sans Arabic', sans-serif;
+}
+
+html[lang="en"] {
+  font-family: var(--font-inter), 'Inter', sans-serif;
+}
+
+/* RTL-aware spacing utilities */
+[dir="rtl"] .space-x-2 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 1;
+}
+
+[dir="rtl"] .space-x-4 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 1;
+}
+
+[dir="rtl"] .space-x-6 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 1;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-cream-dark);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-gold);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-gold-dark);
+}
+
+/* Selection color */
+::selection {
+  background: rgba(201, 169, 110, 0.3);
+  color: var(--color-charcoal);
+}
+
+/* Container utility - Full width with 3% side padding */
+.container-luxury {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 3%;
+}
+
+/* Override Tailwind container to use full width with 3% padding */
+.container {
+  width: 100%;
+  max-width: 100% !important;
+  padding-left: 3% !important;
+  padding-right: 3% !important;
+}
+
+/* Divider */
+.divider-gold {
+  height: 3px;
+  width: 60px;
+  background: var(--color-gold);
+  border-radius: 2px;
+}
+
+/* Star rating */
+.star-filled {
+  color: var(--color-gold);
+}
+
+.star-empty {
+  color: var(--color-border);
+}
+
+/* Image overlay gradient */
+.image-overlay {
+  position: relative;
+}
+
+.image-overlay::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, transparent 50%, rgba(0, 0, 0, 0.4) 100%);
+  pointer-events: none;
+}
+
+/* Smooth hover transitions */
+.hover-lift {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-lift:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+}
+
+/* Navigation link style */
+.nav-link {
+  color: var(--color-foreground);
+  font-weight: 500;
+  font-size: 0.9375rem;
+  transition: color 0.2s ease;
+  position: relative;
+}
+
+.nav-link:hover {
+  color: var(--color-gold);
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--color-gold);
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+/* Form label */
+.form-label {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--color-foreground);
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+/* Checkbox custom */
+.checkbox-gold:checked {
+  background-color: var(--color-gold);
+  border-color: var(--color-gold);
+}
+
+/* Price display */
+.price-large {
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--color-foreground);
+}
+
+.price-period {
+  font-size: 0.875rem;
+  color: var(--color-muted-foreground);
+  font-weight: 400;
+}
+
+/* Testimonial card */
+.testimonial-card {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border-radius: 1rem;
+  padding: 2rem;
+}
+
+/* Icon box */
+.icon-box {
+  width: 56px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(201, 169, 110, 0.1);
+  border-radius: 0.75rem;
+  color: var(--color-gold);
+}
+
+.icon-box-dark {
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+}
+
+/* Dot indicators */
+.dot-indicator {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--color-border);
+  transition: all 0.3s ease;
+}
+
+.dot-indicator.active {
+  background: var(--color-gold);
+  width: 24px;
+  border-radius: 4px;
+}
+
+/* Blog card image */
+.blog-image {
+  border-radius: 0.75rem;
+  overflow: hidden;
+}
+
+/* Newsletter input */
+.newsletter-input {
+  background: white;
+  border: none;
+  border-radius: 0.5rem 0 0 0.5rem;
+  padding: 1rem 1.25rem;
+  flex: 1;
+}
+
+/* RTL Newsletter input styles */
+.newsletter-input-rtl {
+  border-radius: 0 0.5rem 0.5rem 0;
+}
+
+.newsletter-btn {
+  background: var(--color-gold);
+  color: white;
+  border: none;
+  border-radius: 0 0.5rem 0.5rem 0;
+  padding: 1rem 1.5rem;
+  font-weight: 500;
+  transition: background 0.3s ease;
+}
+
+/* RTL Newsletter button styles */
+.newsletter-btn-rtl {
+  border-radius: 0.5rem 0 0 0.5rem;
+}
+
+.newsletter-btn:hover {
+  background: var(--color-gold-dark);
+}
+
+/* Focus states for newsletter form */
+.newsletter-input:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px var(--color-gold);
+}
+
+.newsletter-btn:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 2px var(--color-gold), 0 0 0 4px rgba(201, 169, 110, 0.3);
+}
+
+/* Glassmorphism CSS Utility Classes */
+
+/* Base glass effect - semi-transparent white, backdrop blur, subtle border */
+.glass-card {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(212, 175, 55, 0.2);
+  border-radius: 1rem;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06),
+              inset 0 1px 1px rgba(255, 255, 255, 0.3);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Hover state - brighter, lifted, gold border glow */
+.glass-card-hover {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(212, 175, 55, 0.4);
+  border-radius: 1rem;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.12),
+              0 0 20px rgba(212, 175, 55, 0.25),
+              inset 0 1px 1px rgba(255, 255, 255, 0.5);
+  transform: translateY(-4px);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Darker variant for contrast on light backgrounds */
+.glass-card-dark {
+  background: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(212, 175, 55, 0.15);
+  border-radius: 1rem;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08),
+              inset 0 1px 1px rgba(255, 255, 255, 0.2);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Interactive glass card - combines base with hover behavior */
+.glass-card-interactive {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(212, 175, 55, 0.2);
+  border-radius: 1rem;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06),
+              inset 0 1px 1px rgba(255, 255, 255, 0.3);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+}
+
+.glass-card-interactive:hover {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(16px);
+  border-color: rgba(212, 175, 55, 0.4);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.12),
+              0 0 20px rgba(212, 175, 55, 0.25),
+              inset 0 1px 1px rgba(255, 255, 255, 0.5);
+  transform: translateY(-4px);
+}
+
+/* Glass card with gold accent border */
+.glass-card-gold-accent {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(12px);
+  border: 2px solid rgba(212, 175, 55, 0.3);
+  border-radius: 1rem;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06),
+              inset 0 1px 1px rgba(255, 255, 255, 0.3);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.glass-card-gold-accent:hover {
+  border-color: rgba(212, 175, 55, 0.6);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.12),
+              0 0 25px rgba(212, 175, 55, 0.35),
+              inset 0 1px 1px rgba(255, 255, 255, 0.5);
+  transform: translateY(-4px);
+}
+
+/* Glass card padding utilities */
+.glass-card-sm {
+  padding: 1rem;
+}
+
+.glass-card-md {
+  padding: 1.5rem;
+}
+
+.glass-card-lg {
+  padding: 2rem;
+}
+
+/* Glass card for dark sections */
+.glass-card-on-dark {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 1rem;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3),
+              inset 0 1px 1px rgba(255, 255, 255, 0.2);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.glass-card-on-dark:hover {
+  background: rgba(255, 255, 255, 0.15);
+  border-color: rgba(212, 175, 55, 0.3);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.4),
+              0 0 20px rgba(212, 175, 55, 0.2),
+              inset 0 1px 1px rgba(255, 255, 255, 0.3);
+  transform: translateY(-4px);
+}
+
+/* Card Hover Effects - Luxury Animations */
+
+/* 1. Lift effect - card lifts up with enhanced shadow */
+.hover-lift {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-lift:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.15),
+              0 0 0 1px rgba(201, 169, 110, 0.1);
+}
+
+/* 2. Gold border glow effect */
+.hover-glow {
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid transparent;
+}
+
+.hover-glow:hover {
+  border-color: #D4AF37;
+  box-shadow: 0 0 20px rgba(212, 175, 55, 0.4),
+              inset 0 0 20px rgba(212, 175, 55, 0.05);
+}
+
+/* 3. Icon pulses/scales on card hover */
+.hover-icon-pulse {
+  transition: all 0.3s ease;
+}
+
+.hover-icon-pulse:hover {
+  animation: iconPulse 0.6s ease-out;
+}
+
+@keyframes iconPulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.15);
+    filter: drop-shadow(0 0 8px rgba(212, 175, 55, 0.6));
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* 4. Icon rotates slightly on hover */
+.hover-icon-rotate {
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.hover-icon-rotate:hover {
+  transform: rotate(12deg) scale(1.08);
+  filter: drop-shadow(0 4px 12px rgba(212, 175, 55, 0.35));
+}
+
+/* Combined effect: lift + glow + icon pulse */
+.hover-lift.hover-glow:hover [class*="icon"] {
+  animation: iconPulse 0.6s ease-out;
+}
+
+/* Combined effect: lift + glow + icon rotate */
+.hover-lift.hover-glow:hover [class*="Icon"] {
+  transform: rotate(8deg) scale(1.05);
+}
+
+/* ============================================
+   GLASSMORPHISM UTILITIES - Bento Grid Cards
+   ============================================ */
+
+/* Base glass card effect */
+.glass-card {
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(201, 169, 110, 0.2);
+  border-radius: 1.25rem;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow:
+    0 4px 24px rgba(0, 0, 0, 0.06),
+    inset 0 1px 0 rgba(255, 255, 255, 0.8);
+}
+
+.glass-card:hover {
+  background: rgba(255, 255, 255, 0.85);
+  border-color: rgba(201, 169, 110, 0.4);
+  transform: translateY(-6px);
+  box-shadow:
+    0 20px 40px rgba(0, 0, 0, 0.1),
+    0 0 0 1px rgba(201, 169, 110, 0.3),
+    inset 0 1px 0 rgba(255, 255, 255, 0.9);
+}
+
+/* Glass card with gold accent border */
+.glass-card-gold {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 2px solid rgba(201, 169, 110, 0.3);
+  border-radius: 1.25rem;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.glass-card-gold:hover {
+  border-color: var(--color-gold);
+  box-shadow: 0 0 30px rgba(201, 169, 110, 0.2);
+}
+
+/* Bento grid specific layouts */
+.bento-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .bento-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: minmax(280px, auto);
+  }
+}
+
+@media (min-width: 1024px) {
+  .bento-grid {
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: minmax(260px, auto);
+  }
+}
+
+/* Bento card sizes */
+.bento-large {
+  grid-column: span 1;
+  grid-row: span 1;
+}
+
+@media (min-width: 768px) {
+  .bento-large {
+    grid-column: span 2;
+    grid-row: span 2;
+  }
+}
+
+.bento-wide {
+  grid-column: span 1;
+}
+
+@media (min-width: 768px) {
+  .bento-wide {
+    grid-column: span 2;
+  }
+}
+
+@media (min-width: 1024px) {
+  .bento-wide {
+    grid-column: span 2;
+  }
+}
+
+/* Icon container for bento cards */
+.bento-icon {
+  width: 56px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: linear-gradient(135deg, rgba(201, 169, 110, 0.2), rgba(201, 169, 110, 0.1));
+  transition: all 0.3s ease;
+}
+
+.glass-card:hover .bento-icon {
+  background: linear-gradient(135deg, rgba(201, 169, 110, 0.35), rgba(201, 169, 110, 0.2));
+  transform: scale(1.1);
+}
+
+/* Expandable content animation */
+.bento-expand-content {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+              opacity 0.3s cubic-bezier(0.4, 0, 0.2, 1) 0.1s;
+}
+
+.bento-expand-content.expanded {
+  max-height: 500px;
+  opacity: 1;
+}
+
+/* Chevron rotation */
+.bento-chevron {
+  transition: transform 0.3s ease;
+}
+
+.bento-chevron.rotated {
+  transform: rotate(180deg);
+}
+
+/* ============================================
+   GLOBAL HOVER EFFECTS
+   ============================================ */
+
+/* Image hover - zoom effect */
+.hover-zoom {
+  overflow: hidden;
+}
+
+.hover-zoom img,
+.hover-zoom .image-wrapper {
+  transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hover-zoom:hover img,
+.hover-zoom:hover .image-wrapper {
+  transform: scale(1.08);
+}
+
+/* Image hover with overlay */
+.hover-overlay {
+  position: relative;
+  overflow: hidden;
+}
+
+.hover-overlay::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    transparent 0%,
+    rgba(201, 169, 110, 0.1) 50%,
+    rgba(201, 169, 110, 0.3) 100%
+  );
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.hover-overlay:hover::before {
+  opacity: 1;
+}
+
+/* Link underline animation */
+.hover-underline {
+  position: relative;
+  text-decoration: none;
+}
+
+.hover-underline::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--color-gold);
+  transition: width 0.3s ease;
+}
+
+.hover-underline:hover::after {
+  width: 100%;
+}
+
+/* RTL underline animation */
+[dir="rtl"] .hover-underline::after {
+  left: auto;
+  right: 0;
+}
+
+/* Icon hover - scale up */
+.hover-icon-scale {
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.hover-icon-scale:hover {
+  transform: scale(1.15);
+  color: var(--color-gold);
+}
+
+/* Icon hover - bounce */
+.hover-icon-bounce {
+  transition: transform 0.3s ease;
+}
+
+.hover-icon-bounce:hover {
+  animation: iconBounce 0.5s ease;
+}
+
+@keyframes iconBounce {
+  0%, 100% { transform: translateY(0); }
+  25% { transform: translateY(-4px); }
+  50% { transform: translateY(0); }
+  75% { transform: translateY(-2px); }
+}
+
+/* Button hover - shine effect */
+.hover-shine {
+  position: relative;
+  overflow: hidden;
+}
+
+.hover-shine::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    transparent 0%,
+    rgba(255, 255, 255, 0.3) 50%,
+    transparent 100%
+  );
+  transition: left 0.5s ease;
+}
+
+.hover-shine:hover::before {
+  left: 100%;
+}
+
+/* Card hover - border glow */
+.hover-border-glow {
+  transition: box-shadow 0.3s ease, border-color 0.3s ease;
+  border: 1px solid transparent;
+}
+
+.hover-border-glow:hover {
+  border-color: var(--color-gold);
+  box-shadow: 0 0 20px rgba(201, 169, 110, 0.3);
+}
+
+/* Card hover - scale subtle */
+.hover-scale {
+  transition: transform 0.3s ease;
+}
+
+.hover-scale:hover {
+  transform: scale(1.02);
+}
+
+/* Card hover - tilt 3D effect */
+.hover-tilt {
+  transition: transform 0.3s ease;
+  transform-style: preserve-3d;
+}
+
+.hover-tilt:hover {
+  transform: perspective(1000px) rotateX(2deg) rotateY(-2deg) translateY(-4px);
+}
+
+/* Text hover - color change to gold */
+.hover-text-gold {
+  transition: color 0.3s ease;
+}
+
+.hover-text-gold:hover {
+  color: var(--color-gold);
+}
+
+/* Background hover - subtle gold tint */
+.hover-bg-gold {
+  transition: background-color 0.3s ease;
+}
+
+.hover-bg-gold:hover {
+  background-color: rgba(201, 169, 110, 0.08);
+}
+
+/* Shadow hover - elevated shadow */
+.hover-shadow {
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+  transform: translateY(-2px);
+}
+
+/* Shadow hover - gold shadow */
+.hover-shadow-gold {
+  transition: box-shadow 0.3s ease;
+}
+
+.hover-shadow-gold:hover {
+  box-shadow: 0 8px 25px rgba(201, 169, 110, 0.25);
+}
+
+/* Arrow hover - move right */
+.hover-arrow-right {
+  transition: transform 0.3s ease;
+}
+
+.hover-arrow-right:hover {
+  transform: translateX(4px);
+}
+
+/* RTL arrow hover */
+[dir="rtl"] .hover-arrow-right:hover {
+  transform: translateX(-4px);
+}
+
+/* Group hover effects - for parent-child hover relationships */
+.group:hover .group-hover-scale {
+  transform: scale(1.1);
+}
+
+.group:hover .group-hover-opacity {
+  opacity: 1;
+}
+
+.group:hover .group-hover-translate-up {
+  transform: translateY(-4px);
+}
+
+.group:hover .group-hover-text-gold {
+  color: var(--color-gold);
+}
+
+.group:hover .group-hover-border-gold {
+  border-color: var(--color-gold);
+}
+
+/* Transition utilities */
+.transition-fast {
+  transition-duration: 150ms;
+}
+
+.transition-normal {
+  transition-duration: 300ms;
+}
+
+.transition-slow {
+  transition-duration: 500ms;
+}
+
+/* Focus states for accessibility */
+.focus-gold:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(201, 169, 110, 0.4);
+}
+
+.focus-gold:focus-visible {
+  outline: 2px solid var(--color-gold);
+  outline-offset: 2px;
+}
+
+/* Active/pressed state */
+.active-scale:active {
+  transform: scale(0.98);
+}
+
+/* Disabled state */
+.hover-disabled {
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+/* Hover effect for amenity/feature items */
+.hover-feature-item {
+  transition: all 0.3s ease;
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+}
+
+.hover-feature-item:hover {
+  background: rgba(201, 169, 110, 0.1);
+  transform: translateX(4px);
+}
+
+[dir="rtl"] .hover-feature-item:hover {
+  transform: translateX(-4px);
+}
+
+/* Hover effect for testimonial cards */
+.hover-testimonial {
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hover-testimonial:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.hover-testimonial:hover .testimonial-avatar {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px rgba(201, 169, 110, 0.4);
+}
+
+/* Hover effect for room/studio cards */
+.hover-room-card {
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hover-room-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 24px 48px rgba(0, 0, 0, 0.12);
+}
+
+.hover-room-card:hover .room-image {
+  transform: scale(1.05);
+}
+
+.hover-room-card:hover .room-price {
+  color: var(--color-gold);
+}
+
+/* Hover effect for FAQ accordion */
+.hover-faq-item {
+  transition: all 0.3s ease;
+  border-left: 3px solid transparent;
+}
+
+.hover-faq-item:hover {
+  background: rgba(201, 169, 110, 0.05);
+  border-left-color: var(--color-gold);
+  padding-left: 1rem;
+}
+
+[dir="rtl"] .hover-faq-item {
+  border-left: none;
+  border-right: 3px solid transparent;
+}
+
+[dir="rtl"] .hover-faq-item:hover {
+  border-right-color: var(--color-gold);
+  padding-left: 0;
+  padding-right: 1rem;
+}
+
+/* Navigation link hover */
+.hover-nav-link {
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.hover-nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background: var(--color-gold);
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+}
+
+.hover-nav-link:hover {
+  color: var(--color-gold);
+}
+
+.hover-nav-link:hover::after {
+  width: 100%;
+}
+
+/* Social icon hover */
+.hover-social {
+  transition: all 0.3s ease;
+}
+
+.hover-social:hover {
+  transform: translateY(-3px);
+  color: var(--color-gold);
+}
+
+.hover-social:hover svg {
+  filter: drop-shadow(0 4px 8px rgba(201, 169, 110, 0.4));
+}
+
+/* Hide scrollbar while keeping scroll functionality */
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
