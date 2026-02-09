@@ -784,7 +784,7 @@ export default function BookingPage() {
                   <Maximize className="w-3 h-3 text-gold" />
                   <span className="text-gold text-booking-label-lg font-semibold uppercase tracking-widest">{room.size_sqm} m²</span>
                 </div>
-                <h1 className="text-booking-section heading-serif text-charcoal mb-2">
+                <h1 className="text-booking-section room-name text-charcoal mb-2">
                   {isRtl ? room.name_ar : room.name}
                 </h1>
                 <p className="text-booking-body text-muted-foreground leading-relaxed">

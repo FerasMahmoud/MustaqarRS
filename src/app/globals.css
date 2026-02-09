@@ -65,6 +65,14 @@ body {
   line-height: 1.2;
 }
 
+/* Room name style - clean sans-serif like Calibri */
+.room-name {
+  font-family: Calibri, 'Segoe UI', Arial, sans-serif;
+  font-weight: 300;
+  letter-spacing: 0.01em;
+  line-height: 1.2;
+}
+
 /* Section titles - large display headings */
 .text-display-xl {
   font-size: clamp(2.5rem, 5vw, 4rem);

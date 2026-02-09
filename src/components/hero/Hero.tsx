@@ -246,7 +246,7 @@ export function Hero() {
                 <div className="p-6">
                   {/* Title with capacity and size */}
                   <div className="flex items-start justify-between mb-4">
-                    <h3 className="heading-serif text-booking-section text-[#1A1A1A] font-medium">
+                    <h3 className="room-name text-booking-section text-[#1A1A1A]">
                       {isRtl ? room.name_ar : room.name}
                     </h3>
                     <div className="flex items-center gap-3 text-booking-body text-[#5A5A5A]">

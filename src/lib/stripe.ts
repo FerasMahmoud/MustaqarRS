@@ -49,8 +49,8 @@ export const STUDIOS = {
   'room-2': {
     id: 'room-2',
     dbId: '44444444-4444-4444-4444-444444444444',
-    name: 'Mustaqar 127 C08',
-    nameAr: 'Mustaqar 127 C08',
+    name: 'Mustaqir C6/127',
+    nameAr: 'Mustaqir C6/127',
     monthlyPrice: 5900,
     yearlyPrice: 60180,
     size: 75,
