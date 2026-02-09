@@ -171,28 +171,52 @@ export function Hero() {
                 {/* Horizontal Scrollable Image Gallery - Larger Thumbnails */}
                 {room.images && room.images.length > 0 && (
                   <div className="px-4 py-4 border-b border-[#E8E3DB] bg-gradient-to-r from-white to-[#FAF7F2]">
-                    <p className="text-booking-section font-semibold text-[#8B7355] uppercase tracking-wider mb-3">
-                      {isRtl ? 'استكشف المزيد من الصور' : 'Explore More Images'}
-                    </p>
-                    <div className={`flex gap-3 overflow-x-auto pb-2 scrollbar-hide ${isRtl ? 'flex-row-reverse' : ''}`}>
-                      {room.images.map((img, imgIdx) => (
-                        <button
-                          key={imgIdx}
-                          onClick={() => setSelectedImage({ roomId: room.id, imageUrl: img, index: imgIdx })}
-                          className="flex-shrink-0 relative w-32 h-32 md:w-40 md:h-40 rounded-xl overflow-hidden border-2 border-transparent hover:border-gold hover:shadow-lg transition-all cursor-pointer group/thumb"
-                          aria-label={`${isRtl ? 'عرض الصورة' : 'View image'} ${imgIdx + 1} ${isRtl ? 'من' : 'of'} ${room.images.length}`}
-                        >
-                          <Image
-                            src={img}
-                            alt={`${isRtl ? room.name_ar : room.name} - ${imgIdx + 1}`}
-                            fill
-                            className="object-cover group-hover/thumb:scale-110 transition-transform duration-300"
-                            loading={imgIdx === 0 ? 'eager' : 'lazy'}
-                            sizes="(max-width: 768px) 128px, 160px"
-                          />
-                          <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover/thumb:opacity-100 transition-opacity" />
-                        </button>
-                      ))}
+                    <div className="relative group/gallery">
+                      {/* Left Arrow */}
+                      <button
+                        onClick={() => {
+                          const container = document.getElementById(`gallery-${room.id}`);
+                          if (container) container.scrollBy({ left: isRtl ? 160 : -160, behavior: 'smooth' });
+                        }}
+                        className={`absolute ${isRtl ? 'right-0' : 'left-0'} top-1/2 -translate-y-1/2 z-10 w-8 h-8 bg-white/90 shadow-md rounded-full flex items-center justify-center opacity-0 group-hover/gallery:opacity-100 transition-opacity hover:bg-gold hover:text-white`}
+                      >
+                        <ChevronLeft className={`w-4 h-4 ${isRtl ? 'rotate-180' : ''}`} />
+                      </button>
+
+                      <div
+                        id={`gallery-${room.id}`}
+                        className={`flex gap-3 overflow-x-auto pb-2 scrollbar-hide ${isRtl ? 'flex-row-reverse' : ''}`}
+                      >
+                        {room.images.map((img, imgIdx) => (
+                          <button
+                            key={imgIdx}
+                            onClick={() => setSelectedImage({ roomId: room.id, imageUrl: img, index: imgIdx })}
+                            className="flex-shrink-0 relative w-32 h-32 md:w-40 md:h-40 rounded-xl overflow-hidden border-2 border-transparent hover:border-gold hover:shadow-lg transition-all cursor-pointer group/thumb"
+                            aria-label={`${isRtl ? 'عرض الصورة' : 'View image'} ${imgIdx + 1} ${isRtl ? 'من' : 'of'} ${room.images.length}`}
+                          >
+                            <Image
+                              src={img}
+                              alt={`${isRtl ? room.name_ar : room.name} - ${imgIdx + 1}`}
+                              fill
+                              className="object-cover group-hover/thumb:scale-110 transition-transform duration-300"
+                              loading={imgIdx === 0 ? 'eager' : 'lazy'}
+                              sizes="(max-width: 768px) 128px, 160px"
+                            />
+                            <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover/thumb:opacity-100 transition-opacity" />
+                          </button>
+                        ))}
+                      </div>
+
+                      {/* Right Arrow */}
+                      <button
+                        onClick={() => {
+                          const container = document.getElementById(`gallery-${room.id}`);
+                          if (container) container.scrollBy({ left: isRtl ? -160 : 160, behavior: 'smooth' });
+                        }}
+                        className={`absolute ${isRtl ? 'left-0' : 'right-0'} top-1/2 -translate-y-1/2 z-10 w-8 h-8 bg-white/90 shadow-md rounded-full flex items-center justify-center opacity-0 group-hover/gallery:opacity-100 transition-opacity hover:bg-gold hover:text-white`}
+                      >
+                        <ChevronRight className={`w-4 h-4 ${isRtl ? 'rotate-180' : ''}`} />
+                      </button>
                     </div>
                   </div>
                 )}

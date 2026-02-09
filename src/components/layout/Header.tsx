@@ -24,9 +24,14 @@ export function Header() {
             priority
             className="w-12 h-12 object-contain transition-all duration-500 group-hover:drop-shadow-lg"
           />
-          <span className="text-sm sm:text-lg font-bold text-[#1A1A1A]">
-            {locale === 'ar' ? 'شركة مستقر' : 'شركة مستقر'}
-          </span>
+          <div className="flex flex-col">
+            <span className="text-sm sm:text-lg font-bold text-[#1A1A1A] leading-tight">
+              {locale === 'ar' ? 'شركة مستقر لإدارة الشقق الفندقية' : 'شركة مستقر لإدارة الشقق الفندقية'}
+            </span>
+            <span className="text-[10px] sm:text-xs text-[#C9A96E] font-medium">
+              تسويق - تأجير - تأثيث
+            </span>
+          </div>
         </Link>
 
         {/* Language Toggle */}

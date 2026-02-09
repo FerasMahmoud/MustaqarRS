@@ -18,13 +18,13 @@ const BASE_URL = process.env.NEXT_PUBLIC_APP_URL || 'https://mustaqar.vercel.app
 // Metadata translations
 const metadataByLocale = {
   en: {
-    title: 'شركة مستقر',
-    description: 'Looking for luxury studio rentals in Riyadh? شركة مستقر offers premium furnished studios from SAR 200/night with WiFi, kitchen, and daily cleaning. Book online or via WhatsApp.',
+    title: 'شركة مستقر لإدارة الشقق الفندقية',
+    description: 'Looking for luxury hotel apartments in Riyadh? شركة مستقر لإدارة الشقق الفندقية offers premium furnished suites with WiFi, parking, and security. Marketing - Renting - Furnishing. Book online or via WhatsApp.',
     keywords: 'luxury studio rental Riyadh, furnished apartments Riyadh, short term rental Saudi Arabia, serviced apartments Riyadh, monthly rental Riyadh',
   },
   ar: {
-    title: 'شركة مستقر',
-    description: 'تبحث عن استوديوهات فاخرة للإيجار في الرياض؟ شركة مستقر تقدم استوديوهات مفروشة بالكامل من 200 ريال/ليلة مع واي فاي ومطبخ وتنظيف يومي. احجز عبر الإنترنت أو واتساب.',
+    title: 'شركة مستقر لإدارة الشقق الفندقية',
+    description: 'تبحث عن شقق فندقية فاخرة في الرياض؟ شركة مستقر لإدارة الشقق الفندقية تقدم أجنحة مفروشة بالكامل مع واي فاي ومواقف وأمان. تسويق - تأجير - تأثيث. احجز عبر الإنترنت أو واتساب.',
     keywords: 'إيجار استوديو فاخر الرياض، شقق مفروشة الرياض، إيجار قصير المدى السعودية، شقق فندقية الرياض، إيجار شهري الرياض',
   },
 };
@@ -41,13 +41,13 @@ export async function generateMetadata({
   return {
     title: {
       default: meta.title,
-      template: locale === 'ar' ? `%s | شركة مستقر` : `%s | شركة مستقر`,
+      template: locale === 'ar' ? `%s | شركة مستقر لإدارة الشقق الفندقية` : `%s | شركة مستقر لإدارة الشقق الفندقية`,
     },
     description: meta.description,
     keywords: meta.keywords,
-    authors: [{ name: 'شركة مستقر' }],
-    creator: 'شركة مستقر',
-    publisher: 'شركة مستقر',
+    authors: [{ name: 'شركة مستقر لإدارة الشقق الفندقية' }],
+    creator: 'شركة مستقر لإدارة الشقق الفندقية',
+    publisher: 'شركة مستقر لإدارة الشقق الفندقية',
     metadataBase: new URL(BASE_URL),
     icons: {
       icon: [
@@ -63,7 +63,7 @@ export async function generateMetadata({
       locale: locale === 'ar' ? 'ar_SA' : 'en_US',
       alternateLocale: locale === 'ar' ? 'en_US' : 'ar_SA',
       url: `${BASE_URL}/${locale}`,
-      siteName: 'شركة مستقر',
+      siteName: 'شركة مستقر لإدارة الشقق الفندقية',
       title: meta.title,
       description: meta.description,
       images: [
@@ -71,7 +71,7 @@ export async function generateMetadata({
           url: `${BASE_URL}/images/og-image.jpg`,
           width: 1200,
           height: 630,
-          alt: 'شركة مستقر - Premium Studio Rentals in Riyadh',
+          alt: 'شركة مستقر لإدارة الشقق الفندقية - تسويق تأجير تأثيث',
         },
       ],
     },
