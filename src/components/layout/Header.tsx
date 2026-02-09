@@ -22,7 +22,7 @@ export function Header() {
             width={80}
             height={80}
             priority
-            className="w-14 h-14 sm:w-20 sm:h-20 object-contain flex-shrink-0 transition-all duration-500 group-hover:drop-shadow-lg"
+            className="w-20 h-20 sm:w-24 sm:h-24 object-contain flex-shrink-0 transition-all duration-500 group-hover:drop-shadow-lg"
           />
           <div className="flex flex-col justify-center pt-1">
             <span className="text-xs sm:text-lg font-bold text-[#1A1A1A] leading-tight">
