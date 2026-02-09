@@ -12,8 +12,8 @@ import { getAmenityIcon } from './AmenityIcon';
 // Hero Section Skeleton - shows while rooms data loads
 function HeroSkeleton({ isRtl }: { isRtl: boolean }) {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 pb-16">
-      {[0, 1].map((i) => (
+    <div className="grid grid-cols-1 max-w-4xl mx-auto gap-8 pb-16">
+      {[0].map((i) => (
         <div key={i} className="bg-white rounded-2xl shadow-lg overflow-hidden animate-pulse">
           {/* Video skeleton */}
           <div className="h-80 md:h-96 bg-gray-200" />
@@ -143,7 +143,7 @@ export function Hero() {
         {/* Room Preview Cards - Detailed Style */}
         {isLoading && <HeroSkeleton isRtl={isRtl} />}
         {!isLoading && rooms.length > 0 && (
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 pb-16">
+          <div className={`grid gap-8 pb-16 ${rooms.length === 1 ? 'grid-cols-1 max-w-4xl mx-auto' : 'grid-cols-1 md:grid-cols-2'}`}>
             {rooms.slice(0, 2).reverse().map((room, index) => (
               <div
                 key={room.id}
