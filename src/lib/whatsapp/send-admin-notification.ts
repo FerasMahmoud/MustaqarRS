@@ -171,7 +171,7 @@ export async function testAdminNotification(): Promise<{ success: boolean; error
   const whatsappNumber = formatWhatsAppNumber(settings.admin_whatsapp_number);
 
   const testMessage = `✅ *Test Notification*\n\n` +
-    `This is a test message from your Studio Rentals admin panel.\n\n` +
+    `This is a test message from your Mustaqar admin panel.\n\n` +
     `Your admin notifications are working correctly!\n\n` +
     `⏰ ${new Date().toLocaleString('en-SA')}`;
 

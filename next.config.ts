@@ -16,7 +16,7 @@ const securityHeaders = [
       // Styles: self and unsafe-inline for Tailwind CSS
       "style-src 'self' 'unsafe-inline'",
       // Images: self, data URIs, blobs, and allowed image hosts
-      "img-src 'self' data: blob: https://a0.muscache.com https://ui-avatars.com https://studio-rentals.vercel.app https://maps.googleapis.com https://maps.gstatic.com https://*.google.com https://*.googleusercontent.com",
+      "img-src 'self' data: blob: https://a0.muscache.com https://ui-avatars.com https://mustaqar.vercel.app https://maps.googleapis.com https://maps.gstatic.com https://*.google.com https://*.googleusercontent.com",
       // Fonts: self only
       "font-src 'self' data:",
       // Connect: self, Stripe API, n8n webhooks, Google Maps, Analytics, and external APIs
@@ -102,7 +102,7 @@ const nextConfig: NextConfig = {
       },
       {
         protocol: 'https',
-        hostname: 'studio-rentals.vercel.app',
+        hostname: 'mustaqar.vercel.app',
       },
       {
         protocol: 'http',

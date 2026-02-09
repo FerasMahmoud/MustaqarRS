@@ -111,7 +111,7 @@ export async function GET(request: NextRequest) {
         name: 'Simple message',
         body: {
           phone: '966501234567',
-          message: 'Hello! This is a test message from Studio Rentals.'
+          message: 'Hello! This is a test message from Mustaqar.'
         }
       },
       {
@@ -130,7 +130,7 @@ export async function GET(request: NextRequest) {
             wifiPassword: 'WelcomeToStudio2024',
             checkinTime: '15:00',
             checkoutTime: '12:00',
-            studioGuideUrl: 'https://app.studio-rentals.com/guides/modern-studio'
+            studioGuideUrl: 'https://mustaqar.vercel.app/guides/modern-studio'
           }
         }
       },

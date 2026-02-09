@@ -17,7 +17,7 @@ const faqData = {
         questions: [
           {
             question: 'How much does it cost to rent a studio in Riyadh?',
-            answer: 'Studios at شركة مستقر start from SAR 163/night (SAR 4,900/month) for the Comfort Studio, and SAR 197/night (SAR 5,900/month) for the Spacious Modern Studio. We offer discounts for weekly (10% off) and monthly stays (best rates).',
+            answer: 'Our furnished apartments at شركة مستقر لإدارة الشقق الفندقية start from SAR 197/night (SAR 5,900/month). We offer discounts for longer stays: weekly (10% off) and monthly (best rates).',
           },
           {
             question: 'What is the minimum stay requirement?',
@@ -117,7 +117,7 @@ const faqData = {
         questions: [
           {
             question: 'كم تكلفة إيجار استوديو في الرياض؟',
-            answer: 'تبدأ أسعار الاستوديوهات في شركة مستقر من 163 ريال/ليلة (4,900 ريال/شهر) لستوديو كومفورت، و197 ريال/ليلة (5,900 ريال/شهر) للاستوديو العصري الواسع. نقدم خصومات للإقامات الأسبوعية (10%) والشهرية (أفضل الأسعار).',
+            answer: 'تبدأ أسعار الشقق الفندقية في شركة مستقر لإدارة الشقق الفندقية من 197 ريال/ليلة (5,900 ريال/شهر). نقدم خصومات للإقامات الأسبوعية (10%) والشهرية (أفضل الأسعار).',
           },
           {
             question: 'ما هي مدة الإقامة الأدنى؟',

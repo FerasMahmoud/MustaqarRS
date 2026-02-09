@@ -320,7 +320,7 @@ async function sendContractAfterPayment(
       const pdfBase64 = pdfBuffer.toString('base64');
 
       // Generate contract download URL
-      const contractDownloadUrl = `${process.env.NEXT_PUBLIC_APP_URL || 'https://studio-rentals.com'}/api/contracts/download/${bookingId}?locale=${locale}`;
+      const contractDownloadUrl = `${process.env.NEXT_PUBLIC_APP_URL || 'https://mustaqar.vercel.app'}/api/contracts/download/${bookingId}?locale=${locale}`;
 
       // Prepare payload for n8n workflow
       const n8nPayload = {
@@ -347,7 +347,7 @@ async function sendContractAfterPayment(
       };
 
       // Trigger n8n unified workflow for contract delivery
-      const n8nWebhookUrl = process.env.N8N_WEBHOOK_URL || 'https://primary-production-22d7.up.railway.app/webhook/studio-rentals';
+      const n8nWebhookUrl = process.env.N8N_WEBHOOK_URL || 'https://primary-production-22d7.up.railway.app/webhook/mustaqar';
       if (!n8nWebhookUrl) {
         console.error('N8N_WEBHOOK_URL environment variable not set');
         return;

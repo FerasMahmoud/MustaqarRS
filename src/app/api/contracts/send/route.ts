@@ -104,7 +104,7 @@ export async function POST(request: NextRequest) {
     let contractDownloadUrl = '';
     if (sendWhatsApp) {
       // Generate a time-limited download URL (in production, you'd upload to storage)
-      contractDownloadUrl = `${process.env.NEXT_PUBLIC_APP_URL || 'https://studio-rentals.com'}/api/contracts/download/${bookingId}?locale=${locale}`;
+      contractDownloadUrl = `${process.env.NEXT_PUBLIC_APP_URL || 'https://mustaqar.vercel.app'}/api/contracts/download/${bookingId}?locale=${locale}`;
     }
 
     // Send WhatsApp message with contract link

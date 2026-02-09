@@ -3,7 +3,7 @@ const fs = require('fs');
 const path = require('path');
 
 const SOURCE_DIR = 'C:/Users/feras/OneDrive/Desktop/Personal/Airbnb/New';
-const DEST_DIR = 'C:/Users/feras/studio-rentals/public/amenities';
+const DEST_DIR = 'C:/Users/feras/MustaqarRS/public/amenities';
 
 const images = [
   { source: 'Laundry.JPG', name: 'Laundry' },

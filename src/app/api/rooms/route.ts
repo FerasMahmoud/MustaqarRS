@@ -11,7 +11,7 @@ function rewriteImageUrls(imageUrl: string, host: string): string {
   // If running locally, rewrite vercel URLs to localhost
   if (host?.includes('localhost') || host?.includes('127.0.0.1')) {
     return imageUrl.replace(
-      'https://studio-rentals.vercel.app',
+      'https://mustaqar.vercel.app',
       `http://${host.split(':')[0]}:${host.split(':')[1] || '3000'}`
     );
   }
@@ -45,13 +45,10 @@ export async function GET(request: Request) {
       featured: room.featured || false,
     }));
 
-    // Set aggressive cache headers for CDN and browser caching
-    // Rooms data changes rarely, so we can cache for longer
+    // Cache headers - short cache to pick up room changes quickly
     return NextResponse.json(processedRooms, {
       headers: {
-        'Cache-Control': 'public, s-maxage=3600, stale-while-revalidate=86400, max-age=300',
-        'CDN-Cache-Control': 'public, s-maxage=86400',
-        'Vercel-CDN-Cache-Control': 'public, s-maxage=86400',
+        'Cache-Control': 'public, s-maxage=60, stale-while-revalidate=300, max-age=30',
       },
     });
   } catch (error) {

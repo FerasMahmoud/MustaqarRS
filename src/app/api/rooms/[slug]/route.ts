@@ -11,7 +11,7 @@ function rewriteImageUrls(imageUrl: string, host: string): string {
   // If running locally, rewrite vercel URLs to localhost
   if (host?.includes('localhost') || host?.includes('127.0.0.1')) {
     return imageUrl.replace(
-      'https://studio-rentals.vercel.app',
+      'https://mustaqar.vercel.app',
       `http://${host.split(':')[0]}:${host.split(':')[1] || '3000'}`
     );
   }

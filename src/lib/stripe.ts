@@ -39,34 +39,34 @@ export const stripe = {
 export const STUDIOS = {
   'room-1': {
     id: 'room-1',
-    dbId: '11111111-1111-1111-1111-111111111111',
-    name: 'Deluxe Studio',
-    nameAr: 'ستوديو ديلوكس',
-    monthlyPrice: 5500,
-    yearlyPrice: 55000,
-    size: 45,
+    dbId: '33333333-3333-3333-3333-333333333333',
+    name: 'F02',
+    nameAr: 'F02',
+    monthlyPrice: 5900,
+    yearlyPrice: 60180,
+    size: 80,
   },
   'room-2': {
     id: 'room-2',
-    dbId: '22222222-2222-2222-2222-222222222222',
-    name: 'Comfort Studio',
-    nameAr: 'ستوديو كومفورت',
-    monthlyPrice: 4500,
-    yearlyPrice: 45000,
-    size: 35,
+    dbId: '44444444-4444-4444-4444-444444444444',
+    name: 'Mustaqar 127 C08',
+    nameAr: 'Mustaqar 127 C08',
+    monthlyPrice: 5900,
+    yearlyPrice: 60180,
+    size: 75,
   },
 };
 
 // Map frontend room IDs to database UUIDs
 export const ROOM_ID_MAP: Record<string, string> = {
-  'room-1': '11111111-1111-1111-1111-111111111111',
-  'room-2': '22222222-2222-2222-2222-222222222222',
+  'room-1': '33333333-3333-3333-3333-333333333333',
+  'room-2': '44444444-4444-4444-4444-444444444444',
 };
 
 // Reverse map: database UUIDs to frontend room IDs
 export const DB_ID_TO_ROOM: Record<string, string> = {
-  '11111111-1111-1111-1111-111111111111': 'room-1',
-  '22222222-2222-2222-2222-222222222222': 'room-2',
+  '33333333-3333-3333-3333-333333333333': 'room-1',
+  '44444444-4444-4444-4444-444444444444': 'room-2',
 };
 
 export type StudioId = keyof typeof STUDIOS;

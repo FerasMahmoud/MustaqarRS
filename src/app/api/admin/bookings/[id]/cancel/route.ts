@@ -83,7 +83,7 @@ export async function POST(
     // Trigger n8n unified workflow for cancellation email/WhatsApp
     // This is async and non-blocking
     if (guest?.email) {
-      fetch('https://primary-production-22d7.up.railway.app/webhook/studio-rentals', {
+      fetch(process.env.N8N_WEBHOOK_URL || 'https://primary-production-22d7.up.railway.app/webhook/mustaqar', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({

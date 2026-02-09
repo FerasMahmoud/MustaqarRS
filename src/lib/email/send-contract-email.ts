@@ -86,7 +86,7 @@ export async function sendContractEmail(
 
     // Send email with PDF attachment
     const response = await resend.emails.send({
-      from: process.env.RESEND_FROM_EMAIL || 'noreply@studio-rentals.com',
+      from: process.env.RESEND_FROM_EMAIL || 'noreply@mustaqar.com',
       to: params.guestEmail,
       subject: subject,
       html: emailHtml,

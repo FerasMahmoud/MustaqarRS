@@ -402,7 +402,7 @@ export async function POST(request: NextRequest) {
     // Trigger n8n unified workflow for bank transfer bookings (async, non-blocking)
     if (paymentMethod === 'bank_transfer') {
       logger.info('Triggering n8n workflow for bank transfer booking', { bookingId: booking.id });
-      fetch('https://primary-production-22d7.up.railway.app/webhook/studio-rentals', {
+      fetch(process.env.N8N_WEBHOOK_URL || 'https://primary-production-22d7.up.railway.app/webhook/mustaqar', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({

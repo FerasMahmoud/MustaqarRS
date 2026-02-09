@@ -1,5 +1,5 @@
 /**
- * Simple JSON File Database for Studio Rentals
+ * Simple JSON File Database for Mustaqar
  *
  * This replaces Supabase with a file-based storage system.
  * Perfect for low-volume applications (2 rooms, ~24 bookings/year).

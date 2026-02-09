@@ -3,7 +3,7 @@ const fs = require('fs');
 const path = require('path');
 
 const sourceDir = 'C:\\Users\\feras\\OneDrive\\Desktop\\Personal\\Airbnb\\New';
-const destDir = 'C:\\Users\\feras\\studio-rentals\\public\\amenities';
+const destDir = 'C:\\Users\\feras\\MustaqarRS\\public\\amenities';
 
 const images = [
   { source: 'FirstAid.JPG', name: 'FirstAid' },

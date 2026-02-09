@@ -24,6 +24,16 @@ interface MonthGridProps {
 }
 
 const ROOM_COLORS: Record<string, { dot: string; selected: string; dotBorder: string }> = {
+  '33333333-3333-3333-3333-333333333333': {
+    dot: 'bg-[#D4AF37]',
+    selected: 'ring-[#D4AF37] bg-[#D4AF37]/10',
+    dotBorder: 'border-[#D4AF37]'
+  },
+  '44444444-4444-4444-4444-444444444444': {
+    dot: 'bg-emerald-500',
+    selected: 'ring-emerald-500 bg-emerald-500/10',
+    dotBorder: 'border-emerald-500'
+  },
   'room-1': {
     dot: 'bg-[#D4AF37]',
     selected: 'ring-[#D4AF37] bg-[#D4AF37]/10',
