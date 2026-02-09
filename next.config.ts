@@ -22,7 +22,7 @@ const securityHeaders = [
       // Connect: self, Stripe API, n8n webhooks, Google Maps, Analytics, and external APIs
       "connect-src 'self' https://api.stripe.com https://primary-production-22d7.up.railway.app https://maps.googleapis.com https://api.textmebot.com https://www.google-analytics.com https://vitals.vercel-insights.com https://va.vercel-scripts.com",
       // Frame sources: Stripe for 3D Secure, Google Maps
-      "frame-src 'self' https://js.stripe.com https://hooks.stripe.com https://maps.google.com https://www.google.com",
+      "frame-src 'self' https://js.stripe.com https://hooks.stripe.com https://maps.google.com https://www.google.com https://my.matterport.com",
       // Object sources: none for security
       "object-src 'none'",
       // Base URI: self only
