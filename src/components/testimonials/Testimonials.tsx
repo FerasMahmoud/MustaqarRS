@@ -192,13 +192,10 @@ export function Testimonials({ displayMode = 'carousel', limit }: TestimonialsPr
 
       {/* Guest Info */}
       <div className="flex items-center gap-4">
-        <div className="relative w-12 h-12 rounded-full overflow-hidden flex-shrink-0 ring-2 ring-gold/60 group-hover:ring-gold transition-all">
-          <Image
-            src={testimonial.avatar_url || '/images/default-avatar.jpg'}
-            alt={isRtl ? testimonial.name_ar : testimonial.name_en}
-            fill
-            className="object-cover"
-          />
+        <div className="w-12 h-12 rounded-full flex-shrink-0 ring-2 ring-gold/60 group-hover:ring-gold transition-all bg-gold/20 flex items-center justify-center">
+          <span className="text-gold font-bold text-lg">
+            {(isRtl ? testimonial.name_ar : testimonial.name_en).charAt(0)}
+          </span>
         </div>
         <div className="flex-1 min-w-0">
           <h3 className="text-white font-semibold text-sm truncate">

@@ -17,7 +17,7 @@ export function OrganizationJsonLd() {
     '@type': 'Organization',
     name: 'شركة مستقر لإدارة الشقق الفندقية',
     url: BASE_URL,
-    logo: `${BASE_URL}/logo.png`,
+    logo: `${BASE_URL}/logo.webp`,
     description: 'Premium luxury studio rentals in Riyadh, Saudi Arabia with world-class amenities and service.',
     address: {
       '@type': 'PostalAddress',
@@ -50,7 +50,7 @@ export function LocalBusinessJsonLd() {
     '@context': 'https://schema.org',
     '@type': 'LodgingBusiness',
     name: 'شركة مستقر لإدارة الشقق الفندقية',
-    image: `${BASE_URL}/images/og-image.jpg`,
+    image: `${BASE_URL}/images/og-image.webp`,
     url: BASE_URL,
     telephone: '+966-531182200',
     priceRange: 'SAR 200 - SAR 350',

@@ -12,84 +12,84 @@ const amenities = [
     icon: Wind,
     title: { en: 'Air Conditioning', ar: 'تكييف هواء' },
     description: { en: 'Climate control for your comfort', ar: 'تحكم بالمناخ لراحتك' },
-    image: '/amenities/AC.jpg'
+    image: '/amenities/AC.webp'
   },
   {
     key: 'kitchen',
     icon: Utensils,
     title: { en: 'Fully Equipped Kitchen', ar: 'مطبخ مجهز بالكامل' },
     description: { en: 'Everything you need to cook at home', ar: 'كل ما تحتاجه للطبخ في المنزل' },
-    image: '/amenities/cooker.jpg'
+    image: '/amenities/cooker.webp'
   },
   {
     key: 'microwave',
     icon: Utensils,
     title: { en: 'Microwave Oven', ar: 'فرن ميكروويف' },
     description: { en: 'Convenient cooking appliance', ar: 'جهاز طبخ مريح' },
-    image: '/amenities/Maicrwave.jpg'
+    image: '/amenities/Maicrwave.webp'
   },
   {
     key: 'refrigerator',
     icon: Sparkles,
     title: { en: 'Refrigerator', ar: 'ثلاجة' },
     description: { en: 'Keep your food fresh and cool', ar: 'احتفظ بطعامك طازجًا وباردًا' },
-    image: '/amenities/refrigerator.jpg'
+    image: '/amenities/refrigerator.webp'
   },
   {
     key: 'kettle',
     icon: Utensils,
     title: { en: 'Electric Kettle', ar: 'غلاية كهربائية' },
     description: { en: 'Quick hot water for tea and coffee', ar: 'ماء ساخن سريع للشاي والقهوة' },
-    image: '/amenities/kettle.jpg'
+    image: '/amenities/kettle.webp'
   },
   {
     key: 'washer',
     icon: Sparkles,
     title: { en: 'Washing Machine', ar: 'غسالة ملابس' },
     description: { en: 'In-unit washer for convenience', ar: 'غسالة داخل الوحدة لراحتك' },
-    image: '/amenities/Laundry.jpg'
+    image: '/amenities/Laundry.webp'
   },
   {
     key: 'dryer',
     icon: Zap,
     title: { en: 'Hair Dryer', ar: 'مجفف الشعر' },
     description: { en: 'Professional hair dryer for your convenience', ar: 'مجفف شعر احترافي لراحتك' },
-    image: '/amenities/Drayer.jpg'
+    image: '/amenities/Drayer.webp'
   },
   {
     key: 'sofa_bed',
     icon: Sofa,
     title: { en: 'Sofa Bed', ar: 'أريكة سرير' },
     description: { en: 'Converts to comfortable second bed', ar: 'تتحول إلى سرير ثانٍ مريح' },
-    image: '/amenities/Sofa.jpg'
+    image: '/amenities/Sofa.webp'
   },
   {
     key: 'iron',
     icon: Shirt,
     title: { en: 'Iron', ar: 'مكواة' },
     description: { en: 'Professional iron and ironing board', ar: 'مكواة واحترافية وطاولة كي' },
-    image: '/amenities/Iron.jpg'
+    image: '/amenities/Iron.webp'
   },
   {
     key: 'storage',
     icon: Lock,
     title: { en: 'Door Lock for Safety', ar: 'قفل الباب للأمان' },
     description: { en: 'Secure door lock for your safety and security', ar: 'قفل باب آمن لسلامتك وأمانك' },
-    image: '/amenities/Locker.jpg'
+    image: '/amenities/Locker.webp'
   },
   {
     key: 'first_aid',
     icon: Sparkles,
     title: { en: 'First Aid Kit', ar: 'صندوق الإسعافات الأولية' },
     description: { en: 'Health and safety essentials', ar: 'مستلزمات الصحة والسلامة' },
-    image: '/amenities/FirstAid.jpg'
+    image: '/amenities/FirstAid.webp'
   },
   {
     key: 'extras',
     icon: Sparkles,
     title: { en: 'Extra Amenities', ar: 'مزايا إضافية' },
     description: { en: 'Premium features and extras', ar: 'ميزات وإضافات متميزة' },
-    image: '/amenities/ExtraAminities.jpg'
+    image: '/amenities/ExtraAminities.webp'
   },
 ];
 

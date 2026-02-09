@@ -34,7 +34,7 @@ export const amenityData: Record<string, {
     icon: Wifi,
     label: 'High-Speed WiFi',
     labelAr: 'واي فاي سريع',
-    image: '/amenities/Wifi.jpg',
+    image: '/amenities/Wifi.webp',
     description: 'Fast and reliable internet connection throughout the studio',
     descriptionAr: 'اتصال إنترنت سريع وموثوق في جميع أنحاء الاستوديو'
   },
@@ -42,7 +42,7 @@ export const amenityData: Record<string, {
     icon: Wind,
     label: 'Air Conditioning',
     labelAr: 'تكييف',
-    image: '/amenities/AC.jpg',
+    image: '/amenities/AC.webp',
     description: 'Modern split AC system for perfect temperature control',
     descriptionAr: 'نظام تكييف سبليت حديث للتحكم المثالي في درجة الحرارة'
   },
@@ -50,7 +50,7 @@ export const amenityData: Record<string, {
     icon: UtensilsCrossed,
     label: 'Full Kitchen',
     labelAr: 'مطبخ كامل',
-    image: '/amenities/cooker.jpg',
+    image: '/amenities/cooker.webp',
     description: 'Fully equipped kitchen with fridge, stove, microwave and utensils',
     descriptionAr: 'مطبخ مجهز بالكامل مع ثلاجة وموقد وميكروويف وأدوات'
   },
@@ -58,7 +58,7 @@ export const amenityData: Record<string, {
     icon: Tv,
     label: 'Samsung TV',
     labelAr: 'تلفاز سامسونج',
-    image: '/amenities/Tv.jpg',
+    image: '/amenities/Tv.webp',
     description: 'Smart Samsung TV with Netflix and streaming apps',
     descriptionAr: 'تلفاز سامسونج ذكي مع نتفليكس وتطبيقات البث'
   },
@@ -66,7 +66,7 @@ export const amenityData: Record<string, {
     icon: Car,
     label: 'Free Parking',
     labelAr: 'موقف مجاني',
-    image: '/amenities/Parking.jpg',
+    image: '/amenities/Parking.webp',
     description: 'Dedicated parking space included with your stay',
     descriptionAr: 'موقف سيارات مخصص مشمول مع إقامتك'
   },
@@ -74,7 +74,7 @@ export const amenityData: Record<string, {
     icon: Sparkles,
     label: 'Washer',
     labelAr: 'غسالة',
-    image: '/amenities/Laundry.jpg',
+    image: '/amenities/Laundry.webp',
     description: 'In-unit washer and dryer for your convenience',
     descriptionAr: 'غسالة ومجفف داخل الوحدة لراحتك'
   },
@@ -82,7 +82,7 @@ export const amenityData: Record<string, {
     icon: PawPrint,
     label: 'Pets Allowed',
     labelAr: 'حيوانات مسموح',
-    image: '/amenities/Pets.jpg',
+    image: '/amenities/Pets.webp',
     description: 'Pet-friendly accommodation for your furry friends',
     descriptionAr: 'إقامة صديقة للحيوانات الأليفة لأصدقائك ذوي الفراء'
   },
@@ -90,7 +90,7 @@ export const amenityData: Record<string, {
     icon: Flame,
     label: 'Heating',
     labelAr: 'تدفئة',
-    image: '/amenities/Heating.jpg',
+    image: '/amenities/Heating.webp',
     description: 'Central heating system for cold winter days',
     descriptionAr: 'نظام تدفئة مركزي لأيام الشتاء الباردة'
   },
@@ -106,7 +106,7 @@ export const amenityData: Record<string, {
     icon: ShieldCheck,
     label: 'Security System',
     labelAr: 'نظام أمان',
-    image: '/amenities/Security.jpg',
+    image: '/amenities/Security.webp',
     description: '24/7 security monitoring and secure building access',
     descriptionAr: 'مراقبة أمنية على مدار الساعة ودخول آمن للمبنى'
   },
@@ -114,7 +114,7 @@ export const amenityData: Record<string, {
     icon: Lock,
     label: 'Self Check-in',
     labelAr: 'دخول ذاتي',
-    image: '/amenities/SmartLock.jpg',
+    image: '/amenities/SmartLock.webp',
     description: 'Smart lock with keypad for easy self check-in',
     descriptionAr: 'قفل ذكي مع لوحة مفاتيح لتسجيل الدخول الذاتي السهل'
   },
@@ -122,7 +122,7 @@ export const amenityData: Record<string, {
     icon: Cigarette,
     label: 'Smoking Allowed',
     labelAr: 'تدخين مسموح',
-    image: '/amenities/Smoking.jpg',
+    image: '/amenities/Smoking.webp',
     description: 'Designated smoking area available on balcony',
     descriptionAr: 'منطقة تدخين مخصصة متاحة على الشرفة'
   },
@@ -130,7 +130,7 @@ export const amenityData: Record<string, {
     icon: Bath,
     label: 'Hair Dryer',
     labelAr: 'مجفف الشعر',
-    image: '/amenities/Drayer.jpg',
+    image: '/amenities/Drayer.webp',
     description: 'Professional hair dryer for your convenience',
     descriptionAr: 'مجفف شعر احترافي لراحتك'
   },
@@ -138,7 +138,7 @@ export const amenityData: Record<string, {
     icon: Shirt,
     label: 'Iron',
     labelAr: 'مكواة',
-    image: '/amenities/Iron.jpg',
+    image: '/amenities/Iron.webp',
     description: 'Professional iron and ironing board available',
     descriptionAr: 'مكواة واحترافية وطاولة كي متاحة'
   },
@@ -146,7 +146,7 @@ export const amenityData: Record<string, {
     icon: Sofa,
     label: 'Sofa Bed',
     labelAr: 'أريكة سرير',
-    image: '/amenities/Sofa.jpg',
+    image: '/amenities/Sofa.webp',
     description: 'Comfortable sofa that converts to a bed for extra guests',
     descriptionAr: 'أريكة مريحة تتحول إلى سرير للضيوف الإضافيين'
   },

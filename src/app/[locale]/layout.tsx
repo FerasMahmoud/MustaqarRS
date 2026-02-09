@@ -68,7 +68,7 @@ export async function generateMetadata({
       description: meta.description,
       images: [
         {
-          url: `${BASE_URL}/images/og-image.jpg`,
+          url: `${BASE_URL}/images/og-image.webp`,
           width: 1200,
           height: 630,
           alt: 'شركة مستقر لإدارة الشقق الفندقية - تسويق تأجير تأثيث',
@@ -80,7 +80,7 @@ export async function generateMetadata({
       card: 'summary_large_image',
       title: meta.title,
       description: meta.description,
-      images: [`${BASE_URL}/images/og-image.jpg`],
+      images: [`${BASE_URL}/images/og-image.webp`],
       creator: '@mustaqar_rs',
     },
     // Alternate language versions (hreflang)

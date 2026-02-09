@@ -17,7 +17,7 @@ export function Header() {
           className="flex items-center gap-3 group transition-all duration-500 hover:scale-105"
         >
           <Image
-            src="/logo.png"
+            src="/logo.webp"
             alt="شركة مستقر Logo"
             width={80}
             height={80}
