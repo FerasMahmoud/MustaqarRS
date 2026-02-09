@@ -758,16 +758,6 @@ export default function BookingPage() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           {/* Left Column - Room Info */}
           <div className="space-y-6">
-            {/* Video Section - Lazy Loaded */}
-            <div className="relative aspect-[16/9] bg-black overflow-hidden rounded-xl">
-              <Image
-                src={room.images?.[0] || '/room-images/mustaqar-suite/01-master-bedroom.webp'}
-                alt={isRtl ? room.name_ar : room.name}
-                fill
-                className="object-cover"
-              />
-            </div>
-
             {/* Image Gallery */}
             <ImageGallery images={room.images} roomName={isRtl ? room.name_ar : room.name} />
 
