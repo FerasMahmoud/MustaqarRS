@@ -162,13 +162,13 @@ export default function AdminSettingsPage() {
 
   // Settings state
   const [businessSettings, setBusinessSettings] = useState<BusinessSettings>({
-    business_name: 'Qurtubah Luxury Studios',
-    business_name_ar: 'استوديوهات قرطبة الفاخرة',
-    contact_email: 'info@qurtubahstudios.com',
+    business_name: 'شرمة مستقر',
+    business_name_ar: 'شرمة مستقر',
+    contact_email: 'info@mustaqar.com',
     contact_phone: '+966 50 123 4567',
     whatsapp_number: '+966 50 123 4567',
-    address: 'Qurtubah District, Riyadh, Saudi Arabia',
-    address_ar: 'حي قرطبة، الرياض، المملكة العربية السعودية',
+    address: 'Riyadh, Saudi Arabia',
+    address_ar: 'الرياض، المملكة العربية السعودية',
   });
 
   const [bookingSettings, setBookingSettings] = useState<BookingSettings>({
@@ -183,7 +183,7 @@ export default function AdminSettingsPage() {
   const [notificationSettings, setNotificationSettings] = useState<NotificationSettings>({
     email_notifications: true,
     whatsapp_notifications: true,
-    admin_email: 'admin@qurtubahstudios.com',
+    admin_email: 'admin@mustaqar.com',
     reminder_days_before: 3,
   });
 

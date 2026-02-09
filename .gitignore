@@ -45,3 +45,5 @@ next-env.d.ts
 # utility scripts and temp files
 *.log
 tmp/
+
+.vercel

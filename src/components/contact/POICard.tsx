@@ -53,7 +53,7 @@ export function POICard({ poi, isRtl, index, studioCoordinates }: POICardProps) 
 
   // Generate Google Maps directions link FROM studio TO destination
   const openGoogleMaps = () => {
-    // Use provided studio coordinates, fallback to Qurtubah studio if not provided
+    // Use provided studio coordinates, fallback to Mustaqar studio if not provided
     const origin = studioCoordinates || { lat: 24.8118, lng: 46.7391 };
     const mapsUrl = `https://www.google.com/maps/dir/?api=1&origin=${origin.lat},${origin.lng}&destination=${poi.coordinates.lat},${poi.coordinates.lng}`;
     window.open(mapsUrl, '_blank');

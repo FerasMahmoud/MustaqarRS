@@ -2,7 +2,7 @@ import { Metadata } from 'next';
 import { getRoomBySlug } from '@/lib/db';
 import { RoomProductJsonLd, LodgingJsonLd, BreadcrumbJsonLd } from '@/components/seo/JsonLd';
 
-const BASE_URL = process.env.NEXT_PUBLIC_APP_URL || 'https://qurtubah.com';
+const BASE_URL = process.env.NEXT_PUBLIC_APP_URL || 'https://mustaqar.vercel.app';
 
 interface Props {
   params: Promise<{ locale: string; slug: string }>;
@@ -28,21 +28,21 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 
   // Create SEO-optimized description for LLM GEO
   const seoDescription = locale === 'ar'
-    ? `احجز ${room.name_ar} في منازل قرطبة الفاخرة بالرياض. ${room.size_sqm} م² تتسع لـ ${room.capacity} ضيوف. من ${Math.round(room.monthly_rate / 30)} ريال/ليلة. واي فاي مجاني، مطبخ مجهز، تنظيف أسبوعي.`
-    : `Book ${room.name} at Qurtubah Luxury Homes Riyadh. ${room.size_sqm}m² accommodates ${room.capacity} guests. From SAR ${Math.round(room.monthly_rate / 30)}/night. Free WiFi, equipped kitchen, weekly cleaning included.`;
+    ? `احجز ${room.name_ar} في شرمة مستقر بالرياض. ${room.size_sqm} م² تتسع لـ ${room.capacity} ضيوف. من ${Math.round(room.monthly_rate / 30)} ريال/ليلة. واي فاي مجاني، مطبخ مجهز، تنظيف أسبوعي.`
+    : `Book ${room.name} at Mustaqar RS Riyadh. ${room.size_sqm}m² accommodates ${room.capacity} guests. From SAR ${Math.round(room.monthly_rate / 30)}/night. Free WiFi, equipped kitchen, weekly cleaning included.`;
 
   return {
-    title: `${name} | Qurtubah Luxury Homes`,
+    title: `${name} | Mustaqar RS`,
     description: seoDescription,
     keywords: locale === 'ar'
-      ? `${room.name_ar}, استوديو فاخر الرياض, إيجار قصير المدى, شقق مفروشة, منازل قرطبة`
-      : `${room.name}, luxury studio Riyadh, short term rental, furnished apartments, Qurtubah Homes`,
+      ? `${room.name_ar}, استوديو فاخر الرياض, إيجار قصير المدى, شقق مفروشة, شرمة مستقر`
+      : `${room.name}, luxury studio Riyadh, short term rental, furnished apartments, Mustaqar RS`,
     openGraph: {
       type: 'website',
       locale: locale === 'ar' ? 'ar_SA' : 'en_US',
       alternateLocale: locale === 'ar' ? 'en_US' : 'ar_SA',
       url: `${BASE_URL}/${locale}/book/${slug}`,
-      siteName: 'Qurtubah Luxury Homes',
+      siteName: 'Mustaqar RS',
       title: name,
       description: seoDescription,
       images: room.images.map((img, idx) => ({

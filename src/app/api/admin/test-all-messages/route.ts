@@ -96,7 +96,7 @@ function generateContractMessage(booking: EnrichedBooking): string {
 
 سنرسل لك معلومات الوصول قبل يومين من تسجيل الوصول.
 
-شكراً لاختيارك استوديوهات قرطبة! 🌟`;
+شكراً لاختيارك شرمة مستقر! 🌟`;
   }
 
   return `Hello ${booking.guest_full_name}! 🎉
@@ -110,7 +110,7 @@ Your booking has been confirmed!
 
 We'll send you access information 2 days before check-in.
 
-Thank you for choosing Qurtubah Studios! 🌟`;
+Thank you for choosing Mustaqar RS! 🌟`;
 }
 
 /**
@@ -211,11 +211,11 @@ export async function POST(request: NextRequest) {
       guest_email: 'test@example.com',
       guest_phone: testPhone,
       door_code: '1234#',
-      wifi_network: 'QurtubahStudio_Guest',
+      wifi_network: 'MustaqarRS_Guest',
       wifi_password: 'Welcome2026',
       checkin_time: '3:00 PM',
       checkout_time: '12:00 PM',
-      studio_guide_url: 'https://qurtubah.com/guide',
+      studio_guide_url: 'https://mustaqar.vercel.app/guide',
     };
 
     const results: Array<{

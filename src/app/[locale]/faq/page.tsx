@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { ChevronRight, HelpCircle, Home, CreditCard, Calendar, Shield, Wifi, Car, PawPrint, Clock } from 'lucide-react';
 import { FAQJsonLd, BreadcrumbJsonLd } from '@/components/seo/JsonLd';
 
-const BASE_URL = process.env.NEXT_PUBLIC_APP_URL || 'https://qurtubah.com';
+const BASE_URL = process.env.NEXT_PUBLIC_APP_URL || 'https://mustaqar.vercel.app';
 
 // FAQ data structure for both SEO and rendering
 const faqData = {
@@ -17,7 +17,7 @@ const faqData = {
         questions: [
           {
             question: 'How much does it cost to rent a studio in Riyadh?',
-            answer: 'Studios at Qurtubah Luxury Homes start from SAR 163/night (SAR 4,900/month) for the Comfort Studio, and SAR 197/night (SAR 5,900/month) for the Spacious Modern Studio. We offer discounts for weekly (10% off) and monthly stays (best rates).',
+            answer: 'Studios at Mustaqar RS start from SAR 163/night (SAR 4,900/month) for the Comfort Studio, and SAR 197/night (SAR 5,900/month) for the Spacious Modern Studio. We offer discounts for weekly (10% off) and monthly stays (best rates).',
           },
           {
             question: 'What is the minimum stay requirement?',
@@ -96,8 +96,8 @@ const faqData = {
         icon: Home,
         questions: [
           {
-            question: 'Where is Qurtubah Luxury Homes located?',
-            answer: 'We are located in the Qurtubah district of Riyadh, Saudi Arabia. The exact address and directions will be provided after booking confirmation.',
+            question: 'Where is Mustaqar RS located?',
+            answer: 'We are located in Riyadh, Saudi Arabia. The exact address and directions will be provided after booking confirmation.',
           },
           {
             question: 'How can I contact you?',
@@ -117,7 +117,7 @@ const faqData = {
         questions: [
           {
             question: 'كم تكلفة إيجار استوديو في الرياض؟',
-            answer: 'تبدأ أسعار الاستوديوهات في منازل قرطبة الفاخرة من 163 ريال/ليلة (4,900 ريال/شهر) لستوديو كومفورت، و197 ريال/ليلة (5,900 ريال/شهر) للاستوديو العصري الواسع. نقدم خصومات للإقامات الأسبوعية (10%) والشهرية (أفضل الأسعار).',
+            answer: 'تبدأ أسعار الاستوديوهات في شرمة مستقر من 163 ريال/ليلة (4,900 ريال/شهر) لستوديو كومفورت، و197 ريال/ليلة (5,900 ريال/شهر) للاستوديو العصري الواسع. نقدم خصومات للإقامات الأسبوعية (10%) والشهرية (أفضل الأسعار).',
           },
           {
             question: 'ما هي مدة الإقامة الأدنى؟',
@@ -196,8 +196,8 @@ const faqData = {
         icon: Home,
         questions: [
           {
-            question: 'أين تقع منازل قرطبة الفاخرة؟',
-            answer: 'نقع في حي قرطبة بالرياض، المملكة العربية السعودية. سيتم توفير العنوان الدقيق والاتجاهات بعد تأكيد الحجز.',
+            question: 'أين تقع شرمة مستقر؟',
+            answer: 'نقع في الرياض، المملكة العربية السعودية. سيتم توفير العنوان الدقيق والاتجاهات بعد تأكيد الحجز.',
           },
           {
             question: 'كيف يمكنني التواصل معكم؟',
@@ -219,8 +219,8 @@ export async function generateMetadata({
   const data = faqData[locale as keyof typeof faqData] || faqData.en;
 
   const title = locale === 'ar'
-    ? 'الأسئلة الشائعة | منازل قرطبة الفاخرة'
-    : 'FAQ | Qurtubah Luxury Homes';
+    ? 'الأسئلة الشائعة | شرمة مستقر'
+    : 'FAQ | Mustaqar RS';
 
   const description = locale === 'ar'
     ? 'اعثر على إجابات للأسئلة الشائعة حول إيجار الاستوديوهات الفاخرة في الرياض. الأسعار، تسجيل الوصول، المرافق، السياسات والمزيد.'

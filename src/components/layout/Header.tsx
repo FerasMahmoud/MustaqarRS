@@ -18,14 +18,14 @@ export function Header() {
         >
           <Image
             src="/logo.png"
-            alt="Qurtubah Luxury Homes Logo"
+            alt="شرمة مستقر Logo"
             width={48}
             height={48}
             priority
             className="w-12 h-12 object-contain transition-all duration-500 group-hover:drop-shadow-lg"
           />
           <span className="text-sm sm:text-lg font-bold text-[#1A1A1A]">
-            {locale === 'ar' ? 'منازل قرطبة' : 'Qurtubah Homes'}
+            {locale === 'ar' ? 'شرمة مستقر' : 'Mustaqar RS'}
           </span>
         </Link>
 

@@ -38,7 +38,7 @@ export default function AdminLayout({ children }: { children: ReactNode }) {
             {/* Logo */}
             <div className="p-6 border-b border-[#C9A96E]">
               <h1 className="text-xl font-bold">Admin Portal</h1>
-              <p className="text-xs text-[#C9A96E]">Qurtubah Luxury Homes</p>
+              <p className="text-xs text-[#C9A96E]">شرمة مستقر</p>
             </div>
 
             {/* Navigation */}

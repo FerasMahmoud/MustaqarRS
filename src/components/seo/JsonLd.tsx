@@ -1,6 +1,6 @@
 import { Room } from '@/lib/db';
 
-const BASE_URL = process.env.NEXT_PUBLIC_APP_URL || 'https://qurtubah.com';
+const BASE_URL = process.env.NEXT_PUBLIC_APP_URL || 'https://mustaqar.vercel.app';
 
 /**
  * JSON-LD Structured Data Components for SEO
@@ -15,7 +15,7 @@ export function OrganizationJsonLd() {
   const schema = {
     '@context': 'https://schema.org',
     '@type': 'Organization',
-    name: 'Qurtubah Luxury Homes',
+    name: 'شرمة مستقر',
     url: BASE_URL,
     logo: `${BASE_URL}/logo.png`,
     description: 'Premium luxury studio rentals in Riyadh, Saudi Arabia with world-class amenities and service.',
@@ -32,7 +32,7 @@ export function OrganizationJsonLd() {
       availableLanguage: ['en', 'ar'],
     },
     sameAs: [
-      'https://instagram.com/qurtubah_homes',
+      'https://instagram.com/mustaqar_rs',
     ],
   };
 
@@ -49,14 +49,14 @@ export function LocalBusinessJsonLd() {
   const schema = {
     '@context': 'https://schema.org',
     '@type': 'LodgingBusiness',
-    name: 'Qurtubah Luxury Homes',
+    name: 'شرمة مستقر',
     image: `${BASE_URL}/images/og-image.jpg`,
     url: BASE_URL,
     telephone: '+966-531182200',
     priceRange: 'SAR 200 - SAR 350',
     address: {
       '@type': 'PostalAddress',
-      streetAddress: 'Qurtubah District',
+      streetAddress: 'Riyadh',
       addressLocality: 'Riyadh',
       addressRegion: 'Riyadh Province',
       postalCode: '12345',
@@ -111,7 +111,7 @@ export function RoomProductJsonLd({ room, locale }: RoomProductJsonLdProps) {
     image: room.images.map(img => `${BASE_URL}${img}`),
     brand: {
       '@type': 'Brand',
-      name: 'Qurtubah Luxury Homes',
+      name: 'شرمة مستقر',
     },
     offers: {
       '@type': 'Offer',
@@ -122,7 +122,7 @@ export function RoomProductJsonLd({ room, locale }: RoomProductJsonLdProps) {
       availability: 'https://schema.org/InStock',
       seller: {
         '@type': 'Organization',
-        name: 'Qurtubah Luxury Homes',
+        name: 'شرمة مستقر',
       },
     },
     additionalProperty: [
@@ -245,7 +245,7 @@ export function WebSiteJsonLd() {
   const schema = {
     '@context': 'https://schema.org',
     '@type': 'WebSite',
-    name: 'Qurtubah Luxury Homes',
+    name: 'شرمة مستقر',
     url: BASE_URL,
     potentialAction: {
       '@type': 'SearchAction',

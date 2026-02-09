@@ -78,7 +78,7 @@ export async function POST(request: NextRequest) {
     }
 
     // Send test message
-    const testMessage = `🧪 Test Message from Qurtubah Studios\n\nThis is a test message to verify WhatsApp connection.\n\nTimestamp: ${new Date().toISOString()}`;
+    const testMessage = `🧪 Test Message from Mustaqar RS\n\nThis is a test message to verify WhatsApp connection.\n\nTimestamp: ${new Date().toISOString()}`;
 
     const params = new URLSearchParams({
       recipient: normalizedPhone,
