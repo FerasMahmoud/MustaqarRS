@@ -19,10 +19,10 @@ export function Header() {
           <Image
             src="/logo.png"
             alt="شركة مستقر Logo"
-            width={48}
-            height={48}
+            width={64}
+            height={64}
             priority
-            className="w-12 h-12 object-contain transition-all duration-500 group-hover:drop-shadow-lg"
+            className="w-16 h-16 object-contain transition-all duration-500 group-hover:drop-shadow-lg"
           />
           <div className="flex flex-col">
             <span className="text-sm sm:text-lg font-bold text-[#1A1A1A] leading-tight">

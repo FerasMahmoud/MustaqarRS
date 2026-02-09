@@ -2,8 +2,8 @@
   "rooms": [
     {
       "id": "33333333-3333-3333-3333-333333333333",
-      "name": "Mustaqar Suite",
-      "name_ar": "جناح مستقر",
+      "name": "F02",
+      "name_ar": "F02",
       "description": "Elegant furnished suite in Riyadh featuring two bedrooms with luxury king beds, premium wooden headboards, and glass wardrobes. Includes a formal dining area for 6 guests, vanity dressing area with full-length mirror, and three modern bathrooms with rain showers and premium fixtures. Bright, spacious, and beautifully designed with marble floors and ambient lighting throughout.",
       "description_ar": "جناح مفروش أنيق في الرياض يضم غرفتي نوم مع أسرّة كينج فاخرة ولوح خشبية فاخرة وخزائن زجاجية. يشمل منطقة طعام رسمية تتسع لـ 6 ضيوف، ومنطقة تسريحة مع مرآة كاملة، وثلاث حمامات عصرية مع دش مطري وتجهيزات فاخرة. مشرق وواسع ومصمم بشكل جميل مع أرضيات رخامية وإضاءة محيطية.",
       "monthly_rate": 5900,
