@@ -94,7 +94,7 @@ jest.mock('next-intl', () => ({
 
 // Mock next/navigation
 jest.mock('next/navigation', () => ({
-  useParams: () => ({ slug: 'comfort-studio', locale: 'en' }),
+  useParams: () => ({ slug: 'mustaqar-suite', locale: 'en' }),
   useSearchParams: () => new URLSearchParams(),
   useRouter: () => ({
     push: jest.fn(),
@@ -761,14 +761,14 @@ describe('Terms & Conditions Acceptance Feature', () => {
  * - [ ] Both EN and AR locales are accessible
  *
  * ## 1. Terms Checkbox Display (EN)
- * - [ ] Navigate to /en/book/comfort-studio
+ * - [ ] Navigate to /en/book/mustaqar-suite
  * - [ ] Scroll to Step 3 (ID Verification & Payment)
  * - [ ] Verify checkbox is visible and unchecked by default
  * - [ ] Verify label text: "I agree to the Terms & Conditions"
  * - [ ] Verify link text is gold colored and underlined on hover
  *
  * ## 2. Terms Checkbox Display (AR)
- * - [ ] Navigate to /ar/book/comfort-studio
+ * - [ ] Navigate to /ar/book/mustaqar-suite
  * - [ ] Scroll to Step 3
  * - [ ] Verify checkbox is on the RIGHT side (RTL layout)
  * - [ ] Verify label text: "أوافق على الشروط والأحكام"
@@ -953,31 +953,31 @@ describe('Terms & Conditions Acceptance Feature', () => {
  * Capture screenshots at these points for visual regression testing:
  *
  * ## 1. English Booking Page - Terms Section
- * URL: /en/book/comfort-studio (Step 3)
+ * URL: /en/book/mustaqar-suite (Step 3)
  * Viewport: 1440x900 (Desktop), 375x812 (Mobile)
  * State: Checkbox unchecked, no error
  * File: screenshots/en-terms-default.png
  *
  * ## 2. English Booking Page - Error State
- * URL: /en/book/comfort-studio (Step 3)
+ * URL: /en/book/mustaqar-suite (Step 3)
  * Viewport: 1440x900 (Desktop), 375x812 (Mobile)
  * State: Checkbox unchecked, error visible
  * File: screenshots/en-terms-error.png
  *
  * ## 3. English Booking Page - Accepted State
- * URL: /en/book/comfort-studio (Step 3)
+ * URL: /en/book/mustaqar-suite (Step 3)
  * Viewport: 1440x900 (Desktop), 375x812 (Mobile)
  * State: Checkbox checked, no error
  * File: screenshots/en-terms-accepted.png
  *
  * ## 4. Arabic Booking Page - Terms Section
- * URL: /ar/book/comfort-studio (Step 3)
+ * URL: /ar/book/mustaqar-suite (Step 3)
  * Viewport: 1440x900 (Desktop), 375x812 (Mobile)
  * State: Checkbox unchecked, no error
  * File: screenshots/ar-terms-default.png
  *
  * ## 5. Arabic Booking Page - Error State
- * URL: /ar/book/comfort-studio (Step 3)
+ * URL: /ar/book/mustaqar-suite (Step 3)
  * Viewport: 1440x900 (Desktop), 375x812 (Mobile)
  * State: Checkbox unchecked, error visible
  * File: screenshots/ar-terms-error.png
@@ -995,13 +995,13 @@ describe('Terms & Conditions Acceptance Feature', () => {
  * File: screenshots/ar-terms-page.png
  *
  * ## 8. Form With Checkbox - Desktop
- * URL: /en/book/comfort-studio (Step 3)
+ * URL: /en/book/mustaqar-suite (Step 3)
  * Viewport: 1440x900
  * State: Full form view with checkbox visible
  * File: screenshots/en-form-with-checkbox.png
  *
  * ## 9. Form Without Checkbox Checked - Mobile
- * URL: /en/book/comfort-studio (Step 3)
+ * URL: /en/book/mustaqar-suite (Step 3)
  * Viewport: 375x812
  * State: Checkbox unchecked, attempting to submit
  * File: screenshots/mobile-form-validation.png

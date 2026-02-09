@@ -90,7 +90,7 @@ export default function TestimonialsPage() {
       <section className="relative bg-charcoal py-20 md:py-28">
         <div className="absolute inset-0">
           <Image
-            src="/room-images/comfort-studio/01-main-bedroom.jpg"
+            src="/room-images/mustaqar-suite/01-master-bedroom.webp"
             alt="Luxury hotel background"
             fill
             className="object-cover opacity-20"

@@ -150,7 +150,7 @@ export async function GET(request: NextRequest) {
             wifiPassword: 'ComfortStay2024',
             checkinTime: '15:00',
             checkoutTime: '12:00',
-            studioGuideUrl: 'https://app.studio-rentals.com/guides/comfort-studio'
+            studioGuideUrl: 'https://mustaqar.vercel.app/guide'
           }
         }
       }

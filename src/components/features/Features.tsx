@@ -43,7 +43,7 @@ export function Features() {
             <div className="relative h-[400px] rounded-3xl overflow-hidden">
               {/* Background Image */}
               <Image
-                src="/room-images/comfort-studio/01-main-bedroom.jpg"
+                src="/room-images/mustaqar-suite/01-master-bedroom.webp"
                 alt="Luxury Interior"
                 fill
                 className="object-cover transition-transform duration-700 group-hover:scale-105"

@@ -98,7 +98,7 @@ export const amenityData: Record<string, {
     icon: Laptop,
     label: 'Dedicated Workspace',
     labelAr: 'مكتب عمل',
-    image: '/room-images/comfort-studio/02-entertainment-workspace.jpg',
+    image: '/room-images/mustaqar-suite/05-vanity-dressing.webp',
     description: 'Comfortable desk and ergonomic chair for remote work',
     descriptionAr: 'مكتب مريح وكرسي مريح للعمل عن بعد'
   },
@@ -154,7 +154,7 @@ export const amenityData: Record<string, {
     icon: Table2,
     label: 'Dining Table',
     labelAr: 'طاولة طعام',
-    image: '/room-images/comfort-studio/02-entertainment-workspace.jpg',
+    image: '/room-images/mustaqar-suite/06-dining-area.webp',
     description: 'Dining table with seating for comfortable meals',
     descriptionAr: 'طاولة طعام مع مقاعد لوجبات مريحة'
   },

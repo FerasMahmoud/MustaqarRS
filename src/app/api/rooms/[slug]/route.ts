@@ -2,7 +2,7 @@ import { NextResponse } from 'next/server';
 import { getRoomById, getRoomBySlug } from '@/lib/db';
 
 // Default placeholder image for rooms without images
-const PLACEHOLDER_IMAGE = '/room-images/comfort-studio/01-main-bedroom.jpg';
+const PLACEHOLDER_IMAGE = '/room-images/mustaqar-suite/01-master-bedroom.webp';
 
 // Rewrite image URLs for local development
 function rewriteImageUrls(imageUrl: string, host: string): string {

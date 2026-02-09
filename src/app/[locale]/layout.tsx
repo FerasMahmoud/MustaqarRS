@@ -170,31 +170,12 @@ export default async function LocaleLayout({
         {/* Performance: DNS prefetch for API domains */}
         <link rel="dns-prefetch" href="https://lfmkowkflhxtecoaffrs.supabase.co" />
 
-        {/* Performance: Preload critical video posters for Hero section */}
+        {/* Performance: Preload hero image for Hero section */}
         <link
           rel="preload"
-          href="/images/rooms/spacious-modern-studio/1.jpg"
+          href="/room-images/mustaqar-suite/01-master-bedroom.webp"
           as="image"
           fetchPriority="high"
-        />
-        <link
-          rel="preload"
-          href="/images/rooms/comfort-studio/1.jpg"
-          as="image"
-        />
-
-        {/* Performance: Preload videos with low priority (will load after images) */}
-        <link
-          rel="preload"
-          href="/videos/spacious-modern-studio.mp4"
-          as="video"
-          type="video/mp4"
-        />
-        <link
-          rel="preload"
-          href="/videos/comfort-studio.mp4"
-          as="video"
-          type="video/mp4"
         />
       </head>
       <body className={`${inter.variable} ${notoSansArabic.variable} font-sans antialiased`} suppressHydrationWarning>

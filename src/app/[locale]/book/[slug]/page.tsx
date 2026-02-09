@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect, useCallback, useRef } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 import { useParams, useSearchParams } from 'next/navigation';
 import { useLocale } from 'next-intl';
 import dynamic from 'next/dynamic';
@@ -123,91 +123,6 @@ const TermsModal = dynamic(
   }
 );
 
-// Lazy Video Component - only loads when in viewport
-function LazyVideo({
-  src,
-  poster,
-  className,
-  fallbackText,
-}: {
-  src: string;
-  poster?: string;
-  className?: string;
-  fallbackText: string;
-}) {
-  const videoRef = useRef<HTMLVideoElement>(null);
-  const containerRef = useRef<HTMLDivElement>(null);
-  const [isInView, setIsInView] = useState(false);
-  const [isLoaded, setIsLoaded] = useState(false);
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            setIsInView(true);
-            observer.disconnect();
-          }
-        });
-      },
-      { rootMargin: '100px', threshold: 0.1 }
-    );
-
-    if (containerRef.current) {
-      observer.observe(containerRef.current);
-    }
-
-    return () => observer.disconnect();
-  }, []);
-
-  const handleLoadedData = useCallback(() => {
-    setIsLoaded(true);
-  }, []);
-
-  return (
-    <div ref={containerRef} className={`relative ${className}`}>
-      {/* Poster/Placeholder while loading */}
-      {(!isInView || !isLoaded) && poster && (
-        <Image
-          src={poster}
-          alt="Video poster"
-          fill
-          className="object-cover"
-          priority={false}
-          sizes="(max-width: 768px) 100vw, 60vw"
-        />
-      )}
-
-      {/* Video - only render when in viewport */}
-      {isInView && (
-        <video
-          ref={videoRef}
-          width="100%"
-          height="100%"
-          controls
-          controlsList="nodownload"
-          poster={poster}
-          className={`w-full h-full object-cover transition-opacity duration-300 ${isLoaded ? 'opacity-100' : 'opacity-0'}`}
-          muted
-          autoPlay
-          loop
-          playsInline
-          onLoadedData={handleLoadedData}
-        >
-          <source src={src} type="video/mp4" />
-          {fallbackText}
-        </video>
-      )}
-
-      {/* Loading skeleton */}
-      {isInView && !isLoaded && (
-        <div className="absolute inset-0 bg-gray-900 animate-pulse flex items-center justify-center">
-          <div className="w-12 h-12 border-4 border-white/30 border-t-white rounded-full animate-spin" />
-        </div>
-      )}
-    </div>
-  );
-}
 
 function ImageGallery({ images, roomName }: { images: string[]; roomName: string }) {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -845,13 +760,11 @@ export default function BookingPage() {
           <div className="space-y-6">
             {/* Video Section - Lazy Loaded */}
             <div className="relative aspect-[16/9] bg-black overflow-hidden rounded-xl">
-              <LazyVideo
-                src={room.slug === 'comfort-studio'
-                  ? '/videos/comfort-studio.mp4'
-                  : '/videos/spacious-modern-studio.mp4'}
-                poster={room.images?.[0]}
-                className="w-full h-full"
-                fallbackText={isRtl ? 'المتصفح الخاص بك لا يدعم تشغيل الفيديو' : 'Your browser does not support the video tag.'}
+              <Image
+                src={room.images?.[0] || '/room-images/mustaqar-suite/01-master-bedroom.webp'}
+                alt={isRtl ? room.name_ar : room.name}
+                fill
+                className="object-cover"
               />
             </div>
 

@@ -2,116 +2,12 @@
 
 import { useLocale } from 'next-intl';
 import Image from 'next/image';
-import { useState, useEffect, useRef, useCallback } from 'react';
+import { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 import type { Room } from '@/lib/supabase';
 import { ChevronLeft, ChevronRight, X, Sparkles } from 'lucide-react';
 import { getAmenityIcon } from './AmenityIcon';
 
-// Optimized Lazy Video Component - loads immediately if priority, otherwise when in viewport
-function LazyVideo({
-  src,
-  poster,
-  className,
-  fallbackText,
-  priority = false, // If true, load immediately (above-the-fold)
-}: {
-  src: string;
-  poster?: string;
-  className?: string;
-  fallbackText: string;
-  priority?: boolean;
-}) {
-  const videoRef = useRef<HTMLVideoElement>(null);
-  const containerRef = useRef<HTMLDivElement>(null);
-  const [isInView, setIsInView] = useState(priority); // Start as true if priority
-  const [isLoaded, setIsLoaded] = useState(false);
-  const [videoError, setVideoError] = useState(false);
-
-  useEffect(() => {
-    // Skip observer if priority (load immediately)
-    if (priority) return;
-
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            setIsInView(true);
-            observer.disconnect();
-          }
-        });
-      },
-      { rootMargin: '200px', threshold: 0.01 } // Larger margin for earlier loading
-    );
-
-    if (containerRef.current) {
-      observer.observe(containerRef.current);
-    }
-
-    return () => observer.disconnect();
-  }, [priority]);
-
-  const handleLoadedData = useCallback(() => {
-    setIsLoaded(true);
-  }, []);
-
-  const handleCanPlay = useCallback(() => {
-    // Also trigger on canplay for faster perceived loading
-    setIsLoaded(true);
-  }, []);
-
-  const handleError = useCallback(() => {
-    setVideoError(true);
-  }, []);
-
-  return (
-    <div ref={containerRef} className={`relative ${className}`}>
-      {/* Poster/Placeholder - show with priority for critical images */}
-      {(!isInView || !isLoaded || videoError) && poster && (
-        <Image
-          src={poster}
-          alt="Video poster"
-          fill
-          className="object-cover"
-          priority={priority}
-          sizes="(max-width: 768px) 100vw, 50vw"
-          quality={priority ? 85 : 75}
-        />
-      )}
-
-      {/* Video - render when in viewport, with optimized loading */}
-      {isInView && !videoError && (
-        <video
-          ref={videoRef}
-          width="100%"
-          height="100%"
-          controls
-          controlsList="nodownload"
-          poster={poster}
-          className={`w-full h-full object-cover transition-opacity duration-200 ${isLoaded ? 'opacity-100' : 'opacity-0'}`}
-          muted
-          autoPlay
-          loop
-          playsInline
-          preload={priority ? 'auto' : 'metadata'} // Full preload for priority videos
-          onLoadedData={handleLoadedData}
-          onCanPlay={handleCanPlay}
-          onError={handleError}
-        >
-          <source src={src} type="video/mp4" />
-          {fallbackText}
-        </video>
-      )}
-
-      {/* Loading skeleton - only show briefly */}
-      {isInView && !isLoaded && !videoError && (
-        <div className="absolute inset-0 bg-gray-900/50 flex items-center justify-center">
-          <div className="w-10 h-10 border-3 border-white/30 border-t-white rounded-full animate-spin" />
-        </div>
-      )}
-    </div>
-  );
-}
 
 // Hero Section Skeleton - shows while rooms data loads
 function HeroSkeleton({ isRtl }: { isRtl: boolean }) {
@@ -180,12 +76,7 @@ export function Hero() {
   const [amenityScrollPositions, setAmenityScrollPositions] = useState<{ [key: string]: number }>({});
 
   // Description overrides for rooms with short database descriptions
-  const descriptionOverrides: { [slug: string]: { en: string; ar: string } } = {
-    'comfort-studio': {
-      en: 'Cozy and comfortable studio apartment designed with all essentials for a truly relaxing stay. Features quality bedding, modern bathroom with premium amenities, well-equipped kitchenette, and high-speed WiFi throughout. Perfect for business travelers and short-term stays.',
-      ar: 'استوديو مريح ومريح مصمم بكل الضروريات لإقامة حقاً مريحة. يتميز بأسرة عالية الجودة وحمام حديث مع مرافق فاخرة وغرفة طبخ صغيرة مجهزة بالكامل وإنترنت عالي السرعة. مثالي لرجال الأعمال والإقامات قصيرة الأجل.'
-    }
-  };
+  const descriptionOverrides: { [slug: string]: { en: string; ar: string } } = {};
 
   // Fetch rooms from API with caching
   useEffect(() => {
@@ -262,14 +153,12 @@ export function Hero() {
               >
                 {/* Video Section - First video loads with priority for faster LCP */}
                 <div className="relative h-80 md:h-96 overflow-hidden bg-black group">
-                  <LazyVideo
-                    src={room.slug === 'comfort-studio'
-                      ? '/videos/comfort-studio.mp4'
-                      : '/videos/spacious-modern-studio.mp4'}
-                    poster={room.images?.[0]}
-                    className="w-full h-full"
-                    fallbackText={isRtl ? 'المتصفح الخاص بك لا يدعم تشغيل الفيديو' : 'Your browser does not support the video tag.'}
-                    priority={index === 0} // First card loads immediately
+                  <Image
+                    src={room.images?.[0] || '/room-images/mustaqar-suite/01-master-bedroom.webp'}
+                    alt={isRtl ? room.name_ar : room.name}
+                    fill
+                    className="object-cover transition-transform duration-700 group-hover:scale-105"
+                    priority={index === 0}
                   />
 
                   {index === 0 && (
