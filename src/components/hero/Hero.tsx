@@ -73,6 +73,7 @@ export function Hero() {
   const [rooms, setRooms] = useState<Room[]>([]);
   const [isLoading, setIsLoading] = useState(true);
   const [selectedImage, setSelectedImage] = useState<{ roomId: string; imageUrl: string; index: number } | null>(null);
+  const [showVirtualTour, setShowVirtualTour] = useState(false);
   const [amenityScrollPositions, setAmenityScrollPositions] = useState<{ [key: string]: number }>({});
 
   // Description overrides for rooms with short database descriptions
@@ -205,6 +206,26 @@ export function Hero() {
                             <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover/thumb:opacity-100 transition-opacity" />
                           </button>
                         ))}
+                        {/* Virtual Tour Button */}
+                        <button
+                          onClick={() => setShowVirtualTour(true)}
+                          className="flex-shrink-0 relative w-32 h-32 md:w-40 md:h-40 rounded-xl overflow-hidden border-2 border-gold/50 hover:border-gold hover:shadow-lg transition-all cursor-pointer group/tour bg-gradient-to-br from-[#1A1A1A] to-[#2D2D2D]"
+                          aria-label={isRtl ? 'جولة افتراضية' : 'Virtual Tour'}
+                        >
+                          <div className="absolute inset-0 flex flex-col items-center justify-center gap-2 text-white">
+                            <div className="w-12 h-12 rounded-full bg-gold/20 flex items-center justify-center group-hover/tour:bg-gold/40 group-hover/tour:scale-110 transition-all">
+                              <svg className="w-6 h-6 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 9a3 3 0 016 0v6a3 3 0 01-6 0V9z" />
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M15 12h6M3 12h6" />
+                              </svg>
+                            </div>
+                            <span className="text-xs font-bold text-gold tracking-wide">
+                              {isRtl ? 'جولة افتراضية' : 'Virtual Tour'}
+                            </span>
+                            <span className="text-[10px] text-white/60">3D</span>
+                          </div>
+                        </button>
                       </div>
 
                       {/* Right Arrow */}
@@ -462,6 +483,40 @@ export function Hero() {
                 </div>
               </>
             )}
+          </div>
+        </div>
+      )}
+
+      {/* Virtual Tour Modal */}
+      {showVirtualTour && (
+        <div
+          className="fixed inset-0 z-50 bg-black/80 flex items-center justify-center backdrop-blur-sm p-4"
+          onClick={() => setShowVirtualTour(false)}
+        >
+          <div
+            className="relative w-full max-w-6xl h-[85vh]"
+            onClick={(e) => e.stopPropagation()}
+          >
+            {/* Close Button */}
+            <button
+              onClick={() => setShowVirtualTour(false)}
+              className="absolute -top-10 right-0 text-white hover:text-gold transition-colors z-20 p-2 flex items-center gap-2"
+              aria-label={isRtl ? 'إغلاق الجولة الافتراضية' : 'Close virtual tour'}
+            >
+              <span className="text-sm font-medium">{isRtl ? 'إغلاق' : 'Close'}</span>
+              <X className="w-8 h-8" />
+            </button>
+
+            {/* Matterport iframe */}
+            <div className="w-full h-full rounded-xl overflow-hidden shadow-2xl bg-black">
+              <iframe
+                src="https://my.matterport.com/show/?m=hycWQHnQ4cZ"
+                className="w-full h-full"
+                allowFullScreen
+                allow="fullscreen; xr-spatial-tracking"
+                title={isRtl ? 'جولة افتراضية ثلاثية الأبعاد' : '3D Virtual Tour'}
+              />
+            </div>
           </div>
         </div>
       )}
