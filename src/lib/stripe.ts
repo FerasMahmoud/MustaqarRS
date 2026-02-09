@@ -40,8 +40,8 @@ export const STUDIOS = {
   'room-1': {
     id: 'room-1',
     dbId: '33333333-3333-3333-3333-333333333333',
-    name: 'F02',
-    nameAr: 'F02',
+    name: 'Mustaqir F2/127',
+    nameAr: 'Mustaqir F2/127',
     monthlyPrice: 5900,
     yearlyPrice: 60180,
     size: 80,
