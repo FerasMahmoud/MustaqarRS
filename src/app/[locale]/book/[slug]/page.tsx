@@ -761,6 +761,22 @@ export default function BookingPage() {
             {/* Image Gallery */}
             <ImageGallery images={room.images} roomName={isRtl ? room.name_ar : room.name} />
 
+            {/* 3D Virtual Tour */}
+            <div className="bg-white rounded-2xl shadow-lg p-4 space-y-3">
+              <h3 className="text-booking-label-lg text-gold font-semibold uppercase tracking-widest">
+                {isRtl ? 'جولة افتراضية ثلاثية الأبعاد' : '3D Virtual Tour'}
+              </h3>
+              <div className="relative aspect-[16/9] rounded-xl overflow-hidden">
+                <iframe
+                  src="https://my.matterport.com/show/?m=hycWQHnQ4cZ"
+                  className="absolute inset-0 w-full h-full"
+                  allowFullScreen
+                  allow="fullscreen; xr-spatial-tracking"
+                  title={isRtl ? 'جولة افتراضية' : 'Virtual Tour'}
+                />
+              </div>
+            </div>
+
             {/* Room Details Card */}
             <div className="bg-white rounded-2xl shadow-lg p-6 space-y-6">
               <div>
