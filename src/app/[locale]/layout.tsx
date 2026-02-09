@@ -18,13 +18,13 @@ const BASE_URL = process.env.NEXT_PUBLIC_APP_URL || 'https://mustaqar.vercel.app
 // Metadata translations
 const metadataByLocale = {
   en: {
-    title: 'شرمة مستقر',
-    description: 'Looking for luxury studio rentals in Riyadh? شرمة مستقر offers premium furnished studios from SAR 200/night with WiFi, kitchen, and daily cleaning. Book online or via WhatsApp.',
+    title: 'شركة مستقر',
+    description: 'Looking for luxury studio rentals in Riyadh? شركة مستقر offers premium furnished studios from SAR 200/night with WiFi, kitchen, and daily cleaning. Book online or via WhatsApp.',
     keywords: 'luxury studio rental Riyadh, furnished apartments Riyadh, short term rental Saudi Arabia, serviced apartments Riyadh, monthly rental Riyadh',
   },
   ar: {
-    title: 'شرمة مستقر',
-    description: 'تبحث عن استوديوهات فاخرة للإيجار في الرياض؟ شرمة مستقر تقدم استوديوهات مفروشة بالكامل من 200 ريال/ليلة مع واي فاي ومطبخ وتنظيف يومي. احجز عبر الإنترنت أو واتساب.',
+    title: 'شركة مستقر',
+    description: 'تبحث عن استوديوهات فاخرة للإيجار في الرياض؟ شركة مستقر تقدم استوديوهات مفروشة بالكامل من 200 ريال/ليلة مع واي فاي ومطبخ وتنظيف يومي. احجز عبر الإنترنت أو واتساب.',
     keywords: 'إيجار استوديو فاخر الرياض، شقق مفروشة الرياض، إيجار قصير المدى السعودية، شقق فندقية الرياض، إيجار شهري الرياض',
   },
 };
@@ -41,13 +41,13 @@ export async function generateMetadata({
   return {
     title: {
       default: meta.title,
-      template: locale === 'ar' ? `%s | شرمة مستقر` : `%s | Mustaqar RS`,
+      template: locale === 'ar' ? `%s | شركة مستقر` : `%s | شركة مستقر`,
     },
     description: meta.description,
     keywords: meta.keywords,
-    authors: [{ name: 'شرمة مستقر' }],
-    creator: 'شرمة مستقر',
-    publisher: 'شرمة مستقر',
+    authors: [{ name: 'شركة مستقر' }],
+    creator: 'شركة مستقر',
+    publisher: 'شركة مستقر',
     metadataBase: new URL(BASE_URL),
     icons: {
       icon: [
@@ -63,7 +63,7 @@ export async function generateMetadata({
       locale: locale === 'ar' ? 'ar_SA' : 'en_US',
       alternateLocale: locale === 'ar' ? 'en_US' : 'ar_SA',
       url: `${BASE_URL}/${locale}`,
-      siteName: 'شرمة مستقر',
+      siteName: 'شركة مستقر',
       title: meta.title,
       description: meta.description,
       images: [
@@ -71,7 +71,7 @@ export async function generateMetadata({
           url: `${BASE_URL}/images/og-image.jpg`,
           width: 1200,
           height: 630,
-          alt: 'شرمة مستقر - Premium Studio Rentals in Riyadh',
+          alt: 'شركة مستقر - Premium Studio Rentals in Riyadh',
         },
       ],
     },

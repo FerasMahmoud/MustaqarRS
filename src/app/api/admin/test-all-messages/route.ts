@@ -96,7 +96,7 @@ function generateContractMessage(booking: EnrichedBooking): string {
 
 سنرسل لك معلومات الوصول قبل يومين من تسجيل الوصول.
 
-شكراً لاختيارك شرمة مستقر! 🌟`;
+شكراً لاختيارك شركة مستقر! 🌟`;
   }
 
   return `Hello ${booking.guest_full_name}! 🎉
@@ -110,7 +110,7 @@ Your booking has been confirmed!
 
 We'll send you access information 2 days before check-in.
 
-Thank you for choosing Mustaqar RS! 🌟`;
+Thank you for choosing شركة مستقر! 🌟`;
 }
 
 /**

@@ -15,7 +15,7 @@ export function OrganizationJsonLd() {
   const schema = {
     '@context': 'https://schema.org',
     '@type': 'Organization',
-    name: 'شرمة مستقر',
+    name: 'شركة مستقر',
     url: BASE_URL,
     logo: `${BASE_URL}/logo.png`,
     description: 'Premium luxury studio rentals in Riyadh, Saudi Arabia with world-class amenities and service.',
@@ -49,7 +49,7 @@ export function LocalBusinessJsonLd() {
   const schema = {
     '@context': 'https://schema.org',
     '@type': 'LodgingBusiness',
-    name: 'شرمة مستقر',
+    name: 'شركة مستقر',
     image: `${BASE_URL}/images/og-image.jpg`,
     url: BASE_URL,
     telephone: '+966-531182200',
@@ -111,7 +111,7 @@ export function RoomProductJsonLd({ room, locale }: RoomProductJsonLdProps) {
     image: room.images.map(img => `${BASE_URL}${img}`),
     brand: {
       '@type': 'Brand',
-      name: 'شرمة مستقر',
+      name: 'شركة مستقر',
     },
     offers: {
       '@type': 'Offer',
@@ -122,7 +122,7 @@ export function RoomProductJsonLd({ room, locale }: RoomProductJsonLdProps) {
       availability: 'https://schema.org/InStock',
       seller: {
         '@type': 'Organization',
-        name: 'شرمة مستقر',
+        name: 'شركة مستقر',
       },
     },
     additionalProperty: [
@@ -245,7 +245,7 @@ export function WebSiteJsonLd() {
   const schema = {
     '@context': 'https://schema.org',
     '@type': 'WebSite',
-    name: 'شرمة مستقر',
+    name: 'شركة مستقر',
     url: BASE_URL,
     potentialAction: {
       '@type': 'SearchAction',

@@ -28,21 +28,21 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 
   // Create SEO-optimized description for LLM GEO
   const seoDescription = locale === 'ar'
-    ? `احجز ${room.name_ar} في شرمة مستقر بالرياض. ${room.size_sqm} م² تتسع لـ ${room.capacity} ضيوف. من ${Math.round(room.monthly_rate / 30)} ريال/ليلة. واي فاي مجاني، مطبخ مجهز، تنظيف أسبوعي.`
-    : `Book ${room.name} at Mustaqar RS Riyadh. ${room.size_sqm}m² accommodates ${room.capacity} guests. From SAR ${Math.round(room.monthly_rate / 30)}/night. Free WiFi, equipped kitchen, weekly cleaning included.`;
+    ? `احجز ${room.name_ar} في شركة مستقر بالرياض. ${room.size_sqm} م² تتسع لـ ${room.capacity} ضيوف. من ${Math.round(room.monthly_rate / 30)} ريال/ليلة. واي فاي مجاني، مطبخ مجهز، تنظيف أسبوعي.`
+    : `Book ${room.name} at شركة مستقر Riyadh. ${room.size_sqm}m² accommodates ${room.capacity} guests. From SAR ${Math.round(room.monthly_rate / 30)}/night. Free WiFi, equipped kitchen, weekly cleaning included.`;
 
   return {
-    title: `${name} | Mustaqar RS`,
+    title: `${name} | شركة مستقر`,
     description: seoDescription,
     keywords: locale === 'ar'
-      ? `${room.name_ar}, استوديو فاخر الرياض, إيجار قصير المدى, شقق مفروشة, شرمة مستقر`
-      : `${room.name}, luxury studio Riyadh, short term rental, furnished apartments, Mustaqar RS`,
+      ? `${room.name_ar}, استوديو فاخر الرياض, إيجار قصير المدى, شقق مفروشة, شركة مستقر`
+      : `${room.name}, luxury studio Riyadh, short term rental, furnished apartments, شركة مستقر`,
     openGraph: {
       type: 'website',
       locale: locale === 'ar' ? 'ar_SA' : 'en_US',
       alternateLocale: locale === 'ar' ? 'en_US' : 'ar_SA',
       url: `${BASE_URL}/${locale}/book/${slug}`,
-      siteName: 'Mustaqar RS',
+      siteName: 'شركة مستقر',
       title: name,
       description: seoDescription,
       images: room.images.map((img, idx) => ({

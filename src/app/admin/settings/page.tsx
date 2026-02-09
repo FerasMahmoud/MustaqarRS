@@ -162,8 +162,8 @@ export default function AdminSettingsPage() {
 
   // Settings state
   const [businessSettings, setBusinessSettings] = useState<BusinessSettings>({
-    business_name: 'شرمة مستقر',
-    business_name_ar: 'شرمة مستقر',
+    business_name: 'شركة مستقر',
+    business_name_ar: 'شركة مستقر',
     contact_email: 'info@mustaqar.com',
     contact_phone: '+966 50 123 4567',
     whatsapp_number: '+966 50 123 4567',

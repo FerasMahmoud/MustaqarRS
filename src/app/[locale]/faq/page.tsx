@@ -17,7 +17,7 @@ const faqData = {
         questions: [
           {
             question: 'How much does it cost to rent a studio in Riyadh?',
-            answer: 'Studios at Mustaqar RS start from SAR 163/night (SAR 4,900/month) for the Comfort Studio, and SAR 197/night (SAR 5,900/month) for the Spacious Modern Studio. We offer discounts for weekly (10% off) and monthly stays (best rates).',
+            answer: 'Studios at شركة مستقر start from SAR 163/night (SAR 4,900/month) for the Comfort Studio, and SAR 197/night (SAR 5,900/month) for the Spacious Modern Studio. We offer discounts for weekly (10% off) and monthly stays (best rates).',
           },
           {
             question: 'What is the minimum stay requirement?',
@@ -96,7 +96,7 @@ const faqData = {
         icon: Home,
         questions: [
           {
-            question: 'Where is Mustaqar RS located?',
+            question: 'Where is شركة مستقر located?',
             answer: 'We are located in Riyadh, Saudi Arabia. The exact address and directions will be provided after booking confirmation.',
           },
           {
@@ -117,7 +117,7 @@ const faqData = {
         questions: [
           {
             question: 'كم تكلفة إيجار استوديو في الرياض؟',
-            answer: 'تبدأ أسعار الاستوديوهات في شرمة مستقر من 163 ريال/ليلة (4,900 ريال/شهر) لستوديو كومفورت، و197 ريال/ليلة (5,900 ريال/شهر) للاستوديو العصري الواسع. نقدم خصومات للإقامات الأسبوعية (10%) والشهرية (أفضل الأسعار).',
+            answer: 'تبدأ أسعار الاستوديوهات في شركة مستقر من 163 ريال/ليلة (4,900 ريال/شهر) لستوديو كومفورت، و197 ريال/ليلة (5,900 ريال/شهر) للاستوديو العصري الواسع. نقدم خصومات للإقامات الأسبوعية (10%) والشهرية (أفضل الأسعار).',
           },
           {
             question: 'ما هي مدة الإقامة الأدنى؟',
@@ -196,7 +196,7 @@ const faqData = {
         icon: Home,
         questions: [
           {
-            question: 'أين تقع شرمة مستقر؟',
+            question: 'أين تقع شركة مستقر؟',
             answer: 'نقع في الرياض، المملكة العربية السعودية. سيتم توفير العنوان الدقيق والاتجاهات بعد تأكيد الحجز.',
           },
           {
@@ -219,8 +219,8 @@ export async function generateMetadata({
   const data = faqData[locale as keyof typeof faqData] || faqData.en;
 
   const title = locale === 'ar'
-    ? 'الأسئلة الشائعة | شرمة مستقر'
-    : 'FAQ | Mustaqar RS';
+    ? 'الأسئلة الشائعة | شركة مستقر'
+    : 'FAQ | شركة مستقر';
 
   const description = locale === 'ar'
     ? 'اعثر على إجابات للأسئلة الشائعة حول إيجار الاستوديوهات الفاخرة في الرياض. الأسعار، تسجيل الوصول، المرافق، السياسات والمزيد.'
