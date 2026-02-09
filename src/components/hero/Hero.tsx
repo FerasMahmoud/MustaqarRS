@@ -188,25 +188,7 @@ export function Hero() {
                         id={`gallery-${room.id}`}
                         className={`flex gap-3 overflow-x-auto pb-2 scrollbar-hide ${isRtl ? 'flex-row-reverse' : ''}`}
                       >
-                        {room.images.map((img, imgIdx) => (
-                          <button
-                            key={imgIdx}
-                            onClick={() => setSelectedImage({ roomId: room.id, imageUrl: img, index: imgIdx })}
-                            className="flex-shrink-0 relative w-32 h-32 md:w-40 md:h-40 rounded-xl overflow-hidden border-2 border-transparent hover:border-gold hover:shadow-lg transition-all cursor-pointer group/thumb"
-                            aria-label={`${isRtl ? 'عرض الصورة' : 'View image'} ${imgIdx + 1} ${isRtl ? 'من' : 'of'} ${room.images.length}`}
-                          >
-                            <Image
-                              src={img}
-                              alt={`${isRtl ? room.name_ar : room.name} - ${imgIdx + 1}`}
-                              fill
-                              className="object-cover group-hover/thumb:scale-110 transition-transform duration-300"
-                              loading={imgIdx === 0 ? 'eager' : 'lazy'}
-                              sizes="(max-width: 768px) 128px, 160px"
-                            />
-                            <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover/thumb:opacity-100 transition-opacity" />
-                          </button>
-                        ))}
-                        {/* Virtual Tour Button */}
+                        {/* Virtual Tour Button - First in gallery */}
                         <button
                           onClick={() => setShowVirtualTour(true)}
                           className="flex-shrink-0 relative w-32 h-32 md:w-40 md:h-40 rounded-xl overflow-hidden border-2 border-gold/50 hover:border-gold hover:shadow-lg transition-all cursor-pointer group/tour bg-gradient-to-br from-[#1A1A1A] to-[#2D2D2D]"
@@ -226,6 +208,24 @@ export function Hero() {
                             <span className="text-[10px] text-white/60">3D</span>
                           </div>
                         </button>
+                        {room.images.map((img, imgIdx) => (
+                          <button
+                            key={imgIdx}
+                            onClick={() => setSelectedImage({ roomId: room.id, imageUrl: img, index: imgIdx })}
+                            className="flex-shrink-0 relative w-32 h-32 md:w-40 md:h-40 rounded-xl overflow-hidden border-2 border-transparent hover:border-gold hover:shadow-lg transition-all cursor-pointer group/thumb"
+                            aria-label={`${isRtl ? 'عرض الصورة' : 'View image'} ${imgIdx + 1} ${isRtl ? 'من' : 'of'} ${room.images.length}`}
+                          >
+                            <Image
+                              src={img}
+                              alt={`${isRtl ? room.name_ar : room.name} - ${imgIdx + 1}`}
+                              fill
+                              className="object-cover group-hover/thumb:scale-110 transition-transform duration-300"
+                              loading={imgIdx === 0 ? 'eager' : 'lazy'}
+                              sizes="(max-width: 768px) 128px, 160px"
+                            />
+                            <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover/thumb:opacity-100 transition-opacity" />
+                          </button>
+                        ))}
                       </div>
 
                       {/* Right Arrow */}
